@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+#box{
+	width:1006px;
+	height:400px;
+	padding-top:2px;
+	margin: 120px auto 0;
+	background: #F5F5F5;
+	box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+}
+#box .nav{
+	margin-top:20px;
+	height: 42px;
+	width: 100%;
+	margin-left: 14px;
+}
+#box .nav li{
+	height:40px;
+	padding:0 10px;
+	line-height:42px;
+	text-align:center;
+	color:#323232;
+	float:left;
+	font-size:medium;
+	cursor: pointer;
+}
+#box .nav li.listy{
+	border-bottom:2px solid #FF6700;
+	color:#FF6700;
+}
+#box .product{
+	margin: 20px 0 20px 0;
+	height: 296px;
+	width: 100%;
+	position: relative;
+}
+#box .product ul{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#box .product ul li{
+	height:296px;
+	width:234px;
+	margin-left: 14px;
+	background: #fff;
+	float: left;
+}
+#box .product ul li:hover{
+	transform: translate3d(0,-2px,0);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+#box .product ul li a{
+	display: block;
+	height: 166px;
+	width: 160px;
+	margin: 20px 40px 0;
+}
+#box .product ul li a img{
+	margin-top: 10px;
+  width: 150px;
+  height: 150px;	
+}
+#box .product ul li p{
+	height: 72px;
+	width: 100%;
+	line-height: 24px;
+	text-align: center;
+}
+#box .product ul li p .grey{
+	color: #C3C3C3;
+	font-size:12px;
+}
+#box .product ul li p .price{
+	color:#FF6700;
+	font-size:14px;
+}
+#box .product ul li p .oldprice{
+	font-size:14px;
+	color:#C5C5C5;
+	text-decoration: line-through;
+}
+
+
+
+
+

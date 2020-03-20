@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米table切换</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<ul class="nav">
+				<li style="border-bottom:2px solid #FF6700;
+	color:#FF6700;">热门</li>
+				<li>电视电影</li>
+				<li>电脑</li>
+				<li>家具</li>
+			</ul>
+ 			<div class="product">
+		 		<ul style="display: block;">
+ 					<li>
+ 						<a><img src="img/Hot_01.jpg"/></a>
+ 						<p>小米电视4A 43英寸<br><span class="grey">全屏高清/人工智能语音</span><br><span class="price">1399 元</span> <span class="oldprice">1699 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/Hot_02.jpg"/></a>
+ 						<p>小米电视4C 50英寸<br><span class="grey">4K HDR/人工智能语音</span><br><span class="price">1899 元</span> <span class="oldprice">2199 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/Hot_03.jpg"/></a>
+ 						<p>15.6笔记本 i5 4GMX110<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">4199 元</span> <span class="oldprice">4599 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/Hot_04.jpg"/></a>
+ 						<p>小米笔记本Air 四核i7<br><span class="grey">OLED显示屏幕/激光颗粒物传感器</span><br><span class="price">1499 元</span> <span class="oldprice">1699 元</p>
+ 					</li>
+ 				</ul>
+ 				
+				<ul>
+ 					<li>
+ 						<a><img src="img/TV_01.png"/></a>
+ 						<p>小米电视 4A 55英寸<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">2299 元</span> <span class="oldprice">2799 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/TV_02.jpg"/></a>
+ 						<p>小米电视 4A 38英寸<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">3699 元</span> <span class="oldprice">3999 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/TV_03.jpg"/></a>
+ 						<p>小米电视 4A 45英寸<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">899 元</span> <span class="oldprice">999 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/TV_04.png"/></a>
+ 						<p>小米电视 6A 60英寸<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">1499 元</span> <span class="oldprice">1699 元</p>
+ 					</li>
+ 				</ul>
+ 				
+ 				<ul>
+ 					<li>
+ 						<a><img src="img/Computer_01.jpg"/></a>
+ 						<p>小米笔记本air 四核i7<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">2399 元</span> <span class="oldprice">2699 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/Computer_02.jpg"/></a>
+ 						<p>小米商务本air 四核i5<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">1499 元</span> <span class="oldprice">1699 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/Computer_03.jpg"/></a>
+ 						<p>小米游戏air 四核i3<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">3499 元</span> <span class="oldprice">3799 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/Computer_04.jpg"/></a>
+ 						<p>小米电脑pro i5 8g<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">3599 元</span> <span class="oldprice">3799 元</p>
+ 					</li>
+ 				</ul>
+ 				
+ 				<ul>
+ 					<li>
+ 						<a><img src="img/family_01.jpg"/></a>
+ 						<p>米家恒温电水壶<br><span class="grey">水温智能控制，不锈钢内丹</span><br><span class="price">199 元</span> <span class="oldprice">299 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/family_02.jpg"/></a>
+ 						<p>小米随身电筒<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">1499 元</span> <span class="oldprice">1699 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/family_03.jpg"/></a>
+ 						<p>米家扫地机器人<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">1499 元</span> <span class="oldprice">1699 元</p>
+ 					</li>
+ 					<li>
+ 						<a><img src="img/family_04.jpg"/></a>
+ 						<p>小米米家净水空气器<br><span class="grey">OLED显示屏幕,触摸操作</span><br><span class="price">1499 元</span> <span class="oldprice">1699 元</p>
+ 					</li>
+ 				</ul>
+		 	</div>
+		</div>
+		<script>			
+			var nav = document.getElementsByClassName("nav")[0];
+			var lis = nav.getElementsByTagName("li");
+			var product = document.getElementsByClassName("product")[0];
+			var uls = product.getElementsByTagName("ul");
+			
+			for(var i=0;i<lis.length;i++){
+				(function(x){
+					lis[x].onmouseenter = function(){
+						for(var j=0;j<uls.length;j++){
+							uls[j].style.display = "none";
+							lis[j].style.borderBottom = "";
+							lis[j].style.color = "";
+						}
+						uls[x].style.display = "block";
+						lis[x].style.borderBottom = "2px solid #FF6700";
+						lis[x].style.color = "#FF6700";
+					}
+				})(i)
+			}
+		</script>
+	</body>
+</html>

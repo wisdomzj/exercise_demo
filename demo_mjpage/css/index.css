@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../css/font/iconfont.eot');
+  src: url('../css/font/iconfont.eot?#iefix') format('embedded-opentype'), url('../css/font/iconfont.woff') format('woff'), url('../css/font/iconfont.ttf') format('truetype'), url('../css/font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+.samecen {
+  margin: 0 auto;
+}
+#container {
+  height: 500px;
+  border-top: 7px solid #037EB3;
+}
+#container .header {
+  width: 1002px;
+  height: 157px;
+  position: relative;
+  z-index: 99;
+}
+#container .header .search {
+  height: 102px;
+  border-bottom: 1px solid #DEDEDE;
+}
+#container .header .search a.logo {
+  display: block;
+  height: 66px;
+  width: 260px;
+  float: left;
+  margin-top: 17px;
+}
+#container .header .search a.logo img {
+  height: 100%;
+  width: 100%;
+}
+#container .header .search .secbox {
+  float: right;
+  width: 206px;
+  margin-top: 16px;
+}
+#container .header .search .secbox .link {
+  height: 32px;
+}
+#container .header .search .secbox .link a {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 50%;
+  line-height: 32px;
+  text-align: center;
+  font-family: "宋体";
+  font-size: 12px;
+  position: relative;
+  z-index: 99;
+  color: #037EB3;
+  cursor: pointer;
+}
+#container .header .search .secbox .link a.bar .icon {
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+#container .header .search .secbox .link a.bar ul {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 130px;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #fff;
+  display: none;
+}
+#container .header .search .secbox .link a.bar ul li {
+  height: 25px;
+  width: 115px;
+  line-height: 25px;
+  padding-left: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  color: #037EB3;
+}
+#container .header .search .secbox .link a.bar ul li:hover {
+  background: #F8F8FF;
+}
+#container .header .search .secbox .link a.bar:hover ul {
+  display: block;
+}
+#container .header .search .secbox .link a.bar:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 12px;
+  width: 1px;
+  background: #037EB3;
+}
+#container .header .search .secbox .select {
+  height: 32px;
+  width: 191px;
+  margin-left: 15px;
+  position: relative;
+  z-index: 10;
+}
+#container .header .search .secbox .select .txt {
+  height: 30px;
+  width: 150px;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: none;
+  float: left;
+}
+#container .header .search .secbox .select .btn {
+  height: 32px;
+  width: 39px;
+  border: none;
+  outline: none;
+  background: #037EB3;
+  float: left;
+}
+#container .header .search .secbox .select .seaicon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #fff;
+  transform: translateY(-50%);
+}
+#container .header .nav {
+  margin: 1px 0;
+  height: 52px;
+  width: 1002px;
+}
+#container .header .nav ul.nulsty {
+  height: 100%;
+  padding: 0 6px;
+  width: 990px;
+}
+#container .header .nav ul.nulsty li {
+  height: 100%;
+  width: 110px;
+  float: left;
+  position: relative;
+}
+#container .header .nav ul.nulsty li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 52px;
+  color: #000000;
+}
+#container .header .nav ul.nulsty li a.fist {
+  letter-spacing: 15px;
+  padding-left: 15px;
+  width: 95px;
+}
+#container .header .nav ul.nulsty li a.hover {
+  background: #037EB3;
+  color: #fff;
+}
+#container .header .nav ul.nulsty li.pro ul.mulsty {
+  padding: 8px;
+  background: #037EB3;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  display: none;
+}
+#container .header .nav ul.nulsty li.pro ul.mulsty li {
+  height: 36px;
+  line-height: 36px;
+  width: 260px;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  text-indent: 15px;
+}
+#container .header .nav ul.nulsty li.pro ul.mulsty li:hover {
+  background: #004477;
+  cursor: pointer;
+}
+#container .header .nav ul.nulsty li.menu ul.mulsty {
+  padding: 8px;
+  background: #037EB3;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  display: none;
+}
+#container .header .nav ul.nulsty li.menu ul.mulsty li {
+  height: 36px;
+  line-height: 36px;
+  width: 175px;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  text-indent: 15px;
+}
+#container .header .nav ul.nulsty li.menu ul.mulsty li:hover {
+  background: #004477;
+  cursor: pointer;
+}
+#container .shuffing {
+  width: 1200px;
+  height: 400px;
+  position: relative;
+  z-index: 88;
+}
+#container .shuffing img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#container .shuffing .tosame {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 44px;
+  width: 44px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  line-height: 44px;
+  text-align: center;
+}
+#container .shuffing .tosame i {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+#container .shuffing .tosame i.rote {
+  transform-origin: center center;
+  transform: rotate(180deg);
+}
+#container .shuffing .toleft {
+  left: 10px;
+}
+#container .shuffing .toright {
+  right: 10px;
+  transform: rotate(180deg);
+}
+#container .shuffing .calendar {
+  position: absolute;
+  bottom: -52px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 102px;
+  width: 1002px;
+}
+#container .shuffing .calendar .caltop {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.4);
+}
+#container .shuffing .calendar .caltop .sty {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #fff;
+}
+#container .shuffing .calendar .caltop .time {
+  background: #037EB3;
+  float: left;
+}
+#container .shuffing .calendar .caltop .season {
+  float: right;
+  width: 200px;
+}
+#container .shuffing .calendar .calbottom {
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background: #037EB3;
+  color: #fff;
+}
+#container .content {
+  width: 1002px;
+  margin-top: 70px;
+  overflow: hidden;
+}
+#container .content .samesty {
+  float: left;
+  padding: 15px 0 0 20px;
+  height: 245px;
+  width: 314px;
+}
+#container .content .samesty .title {
+  height: 35px;
+  border-bottom: 2px solid #5C307D;
+}
+#container .content .samesty .title.bororg {
+  border-bottom: 2px solid #E0823D;
+}
+#container .content .samesty .title .stit {
+  height: 100%;
+  line-height: 35px;
+  color: #60132D;
+}
+#container .content .samesty .title p {
+  width: 28%;
+  float: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+#container .content .samesty .title a {
+  display: block;
+  width: 15%;
+  font-size: 12px;
+  float: right;
+}
+#container .content .samesty ul {
+  margin-top: 10px;
+}
+#container .content .samesty ul.lihover li:hover {
+  color: red;
+  cursor: pointer;
+}
+#container .content .samesty ul.media li {
+  height: 60px;
+  margin-bottom: 9px;
+  padding: 0;
+  width: 314px;
+}
+#container .content .samesty ul.media li div {
+  height: 100%;
+}
+#container .content .samesty ul.media li .medlc {
+  width: 60px;
+  float: left;
+  background: #037EB3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+#container .content .samesty ul.media li .medlc p {
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+}
+#container .content .samesty ul.media li .medlc p.medlft {
+  font-size: 20px;
+  font-weight: 600;
+}
+#container .content .samesty ul.media li .medrc {
+  width: 234px;
+  float: right;
+}
+#container .content .samesty ul.media li .medrc p {
+  line-height: 20px;
+}
+#container .content .samesty ul.media li .medrc .medrctit {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 600;
+}
+#container .content .samesty ul.media li .medrc .medrctit:hover {
+  color: red;
+  cursor: pointer;
+}
+#container .content .samesty ul.media li .medrc .medrccon {
+  height: 40px;
+  white-space: normal;
+}
+#container .content .samesty ul li {
+  height: 25px;
+  line-height: 25px;
+  padding-left: 20px;
+  width: 294px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  position: relative;
+}
+#container .content .samesty ul li i.icon {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  display: block;
+}
+#container .content .slide {
+  float: left;
+  height: 260px;
+  width: 334px;
+}
+#container .content .slide .sbox {
+  height: 230px;
+  width: 334px;
+  overflow: hidden;
+  position: relative;
+}
+#container .content .slide .sbox .imgbox {
+  width: 1670px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+}
+#container .content .slide .sbox .imgbox img {
+  height: 100%;
+  width: 334px;
+}
+#container .content .slide .sbox .squarebox {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 24px;
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#container .content .slide .sbox .squarebox li {
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #1188C0;
+  font-size: 12px;
+}
+#container .content .slide .sbox .squarebox li.addbg {
+  background: #1188C0;
+  color: #fff;
+  border: 1px solid #1188C0;
+}
+#container .content .slide .scon {
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  background: #F6F6F6;
+  padding-left: 15px;
+  width: 319px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#container .comlinks {
+  height: 165px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  background: #F8F7F3;
+}
+#container .comlinks .linkscon {
+  width: 1002px;
+  height: 100%;
+}
+#container .comlinks .linkscon dl {
+  height: 115px;
+  width: 450px;
+  float: left;
+}
+#container .comlinks .linkscon dl dt {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+  border-bottom: 1px solid #CDCCC8;
+  padding: 5px 0;
+  color: #60132D;
+}
+#container .comlinks .linkscon dl dd {
+  width: 25%;
+  height: 30px;
+  float: left;
+}
+#container .comlinks .linkscon dl dd a {
+  display: block;
+  height: 100%;
+  box-sizing: content-box;
+  color: #60202D;
+  font-size: 14px;
+  padding-left: 10px;
+}
+#container .comlinks .linkscon ul {
+  height: 155px;
+  width: 500px;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#container .comlinks .linkscon ul li {
+  height: 145px;
+  width: 110px;
+}
+#container .comlinks .linkscon ul li a {
+  display: block;
+}
+#container .comlinks .linkscon ul li a img {
+  height: 100%;
+  width: 100%;
+}
+#container .footer {
+  background: #037EB3;
+}
+#container .footer .fcon {
+  height: 162px;
+  width: 1002px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#container .footer .fcon a {
+  display: block;
+}
+#container .footer .fcon a img {
+  height: 80px;
+  width: 80px;
+}
+#container .footer .fcon p {
+  line-height: 30px;
+  width: 725px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}

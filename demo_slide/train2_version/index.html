@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无缝滑动版本一</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="box">
+			<ul class="ulbox">
+				<li class="fstyle">今天怎么样<strong>？</strong></li>
+				<li class="libox">
+					<ul class="list">
+						<li style="background: #4ec7f3;">还行</li>
+						<li style="background: #42c58a;">很糟糕</li>
+						<li style="background: #a0a0a0;">一般般</li>
+						<li style="background: #dc143c;">我想一想</li>
+						<li style="background: #4ec7f3;">还行</li>
+					</ul>
+				</li>
+				<li class="fstyle">加油！努力！</li>
+			</ul>	
+		</div>
+		<script>
+			var c = 0;
+			setInterval(function(){
+				c++;
+				if(c == 5){
+					$(".list").css({"top":0});
+					c = 1;
+				}
+				var t = c*-80;
+				$(".list").stop().animate({"top":t},800);
+			},1000)
+		</script>
+	</body>
+</html>

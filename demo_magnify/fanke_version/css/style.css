@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #F8F8F8;
+}
+#box {
+  width: 960px;
+  height: 544px;
+  margin: 50px auto;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#box .insetsbox {
+  height: 400px;
+  width: 400px;
+  background: url(../img/insets.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+#box .insetsbox .movesquare {
+  height: 200px;
+  width: 220px;
+  background: #fff;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#box .insetsbox .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0;
+}
+#box .larversionbox {
+  height: 400px;
+  width: 440px;
+  position: relative;
+  overflow: hidden;
+}
+#box .larversionbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

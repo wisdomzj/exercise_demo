@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #F8F8F8;
+}
+
+#box {
+  width: 800px;
+  height: 400px;
+  margin: 120px auto 0;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box ul.ulbox li{
+	width:400px;
+	height:80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 40px;
+}
+
+#box ul.ulbox li.fstyle{
+	color:#7d7d7d;
+}
+#box ul.ulbox li.libox{
+	overflow: hidden;
+	position: relative;
+}
+#box ul.ulbox li.libox ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+#box ul.ulbox li.libox ul li{
+	height: 100%;
+	color: #fff;
+}
+

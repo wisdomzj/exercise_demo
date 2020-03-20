@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #F8F8F8;
+}
+
+#box {
+    width: 960px;
+    height: 544px;
+    margin: 50px auto;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .insetsbox {
+        height: 400px;
+        width: 400px;
+        background: url(../img/insets.jpg);
+        background-size: 100% 100%;
+        position: relative;
+        .movesquare {
+            height: 200px;
+            width: 220px;
+            background: #fff;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            opacity: 0;
+        }
+    }
+    .larversionbox {
+        height: 400px;
+        width: 440px;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

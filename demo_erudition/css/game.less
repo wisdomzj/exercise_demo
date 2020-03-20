@@ -1,0 +1,298 @@
+@import "common";
+
+
+//gamebanner
+#gamebanner{
+    height: 254px;
+    width: 100%;
+    background: lightcoral;
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+//area
+#area{
+    .main{
+        width: 1000px;
+        margin: 0 auto;
+        .mtit{
+            height: 29px;
+            padding: 25px 0 15px;
+            border-bottom: 1px solid #c7d6e5;
+            h2{
+                height: 100%;
+                width: 870px;
+                background:url(../img/location.png) no-repeat 0 -100px;
+                background-position:0 -94px;
+                padding-left: 30px;
+                font-size: 20px;
+                color: #444866;
+                line-height: 29px;
+                float: left;
+            }
+            .home{
+                float: left;
+                width: 100px;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .homepage{
+                    display: block;
+                    height: 13px;
+                    width: 15px;
+                    background: url(../img/home.png) no-repeat;
+                }
+                .togame{
+                    width: 4px;
+                    height: 8px;
+                    background: url(../img/icon.png) no-repeat 0 -150px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .taboptions{
+            padding: 40px 0;
+            .tabbox{
+                width: 100%;
+                overflow: hidden;
+                .tabnav{
+                    float: left;
+                    width: 195px;
+                    li{
+                        height: 80px;
+                        border-bottom: 1px solid #cad6e1;
+                        cursor: pointer;
+                        &.addinstr{
+                            background: url(../img/arrow.png) no-repeat center right;
+                        }
+                        div.font{
+                            height: 100%;
+                            width: 140px;
+                            float: right;
+                            line-height: 80px;
+                            font-size: 16px;
+                            &.chfontcor{
+                                color: #38B774;
+                            }
+                            &:hover{
+                               color: #38B774; 
+                            }
+                        }
+                        div.icon{
+                            height: 40px;
+                            width: 34px;
+                            float: left;
+                            margin-top: 20px;
+                            &.iph{
+                                background: url(../img/pad.png) no-repeat;
+                            }
+                            &.and{
+                                background: url(../img/pad.png) no-repeat -4px -100px;
+                            }
+                            &.ipa{
+                                background: url(../img/pad.png) no-repeat 0 -200px;
+                            }
+                            &.pc{
+                                background: url(../img/pad.png) no-repeat 0 -300px;
+                                height: 28px;
+                                margin-top: 27px;
+                            }
+                            &.tv{
+                                background: url(../img/pad.png) no-repeat 0 -606px;
+                                height: 24px;
+                                margin-top: 28px;
+                            }
+                        }
+                        &:hover .icon.iph{
+                            background: url(../img/pad.png) no-repeat -125px 0; 
+                        }
+                        &:hover .icon.and{
+                            background: url(../img/pad.png) no-repeat -124px -100px; 
+                        }
+                        &:hover .icon.ipa{
+                            background: url(../img/pad.png) no-repeat -121px -200px; 
+                        }
+                        &:hover .icon.pc{
+                            background: url(../img/pad.png) no-repeat -120px -300px; 
+                        }
+                        &:hover .icon.tv{
+                            background: url(../img/pad.png) no-repeat -43px -606px; 
+                        }
+                    }
+                }
+                .tabcon{
+                    float: right;
+                    width: 757px;
+                    position: relative;
+                    .listcon{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 32px;
+                        color: #fff;
+                        display: none;
+                        width: 800px;
+                        ul{
+                            li{
+                                float: left;
+                                margin: 0 43px 42px 0;
+                                width: 355px;
+                                height: 327px;
+                                border: 1px solid #cad6e1;
+                                border-radius: 5px;
+                                text-align: center;
+                                background-color: #f7f7f7;
+                                &:hover{
+                                    background: #fff;
+                                }
+                                h3{
+                                    height: 55px;
+                                    padding-top: 3px;
+                                    line-height: 55px;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    a{
+                                        text-decoration: none;
+                                        color: #444866;
+                                        &:hover{
+                                            color: #38B774;
+                                        }
+                                        span{
+                                            padding-right: 1.166em;
+                                            font-size: 12px;
+                                            font-family: Arial;
+                                            color: #38b774;
+                                            background: url(../img/arrow.png) no-repeat right center;
+                                            text-transform: uppercase;
+                                            margin-left: 4px;
+                                        }
+                                    }
+                                }
+                                .gameimg{
+                                    width: 331px;
+                                    height: 195px;
+                                    margin: 0 auto 20px;
+                                    img{
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+                                }
+                                .gamelink{
+                                    width: 331px;
+                                    height: 36px;
+                                    margin: 0 auto;
+                                    &.clientdown{
+                                        font-size: 16px;
+                                        line-height: 36px;
+                                        text-align: center;
+                                        color: #191D3A;
+                                        background: url(../img/download-icon.png) no-repeat;
+                                        background-position:220px 5px;
+                                    }
+                                    &.onlinegame{
+                                        font-size: 16px;
+                                        line-height: 36px;
+                                        text-align: center;
+                                        color: #191D3A;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        span{
+                                            margin-right: 10px;
+                                        }
+                                        a.alinks{
+                                            display: block;
+                                            height: 24px;
+                                            width: 24px;
+                                            margin-right: 10px;
+                                            &.facelink{
+                                                background: url(../img/online.png) no-repeat 0 -48px;    
+                                            }
+                                            &.happylink{
+                                                background: url(../img/online.png) no-repeat -26px -48px;
+                                            }
+                                            &.weibolink{
+                                                background: url(../img/online.png) no-repeat -51px -48px;
+                                            }
+                                        }
+                                    }
+                                    .appstore{
+                                        width: 165px;
+                                        border-right:1px solid  #C7D6E5;
+                                        height: 36px;
+                                        float: left;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .appleicon{
+                                            height: 28px;
+                                            width: 22px;
+                                            background: url(../img/icon.png) no-repeat 0 -350px;
+                                        }
+                                        .qrcode{
+                                            height: 30px;
+                                            width: 30px;
+                                            background: url(../img/icon.png) no-repeat 0 -450px;
+                                            position: relative;
+                                            .code{
+                                                position: absolute;
+                                                background: url(../img/ewmbg.png) no-repeat;
+                                                padding-top: 10px;
+                                                width: 146px;
+                                                height: 142px;
+                                                left: 50%;
+                                                bottom: 32px;
+                                                transform: translateX(-50%);
+                                                display: none;
+                                            }
+                                        }
+                                        .andicon{
+                                            height: 32px;
+                                            width: 24px;
+                                            background: url(../img/icon.png) no-repeat 0 -550px;
+                                        }
+                                        .afont{
+                                            display: block;
+                                            height: 32px;
+                                            width: 100px;
+                                            line-height: 32px;
+                                            text-align: center;
+                                            font-size: 14px;
+                                            color: black;
+                                        }
+                                        &.qrcodedown{
+                                            border: none;
+                                            &:hover .afont{
+                                                color: #2EBB6F;
+                                            }
+                                            &:hover .code{
+                                                display: block;
+                                            }
+                                        }
+                                        &.store{
+                                            &:hover .afont{
+                                               color: #2EBB6F; 
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

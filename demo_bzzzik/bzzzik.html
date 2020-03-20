@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box {
+			  width: 800px;
+			  height: 400px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%,-50%);
+			  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+			  background: #fff;
+			  display: flex;
+			  flex-flow: row wrap;
+			  justify-content: center;
+			  align-content: center;
+			}
+			#box p{
+				height: 60px;
+				width: 720px;
+				text-align: center;
+				line-height: 60px;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<p>现在时间为:<span class="nt"></span></p>
+			<p>未来时间为:<span class="ft"></span></p>
+			<p class="dj">距离未来时间倒计时为:<span class="day"></span>天<span class="hour"></span>时<span class="min"></span>分<span class="sec"></span>秒</p>
+		</div>
+		<script>
+			var nt = document.getElementsByClassName("nt")[0];
+			var ft = document.getElementsByClassName("ft")[0];
+			var dj = document.getElementsByClassName("dj")[0];
+			var spans = dj.getElementsByTagName("span"); 
+			var ntime = new Date();
+			var ftime = new Date(2019,4,26,8,5,3);
+			
+//			时间格式化
+			function formatDate(time,format="YY-MM-DD hh:mm:ss"){
+			    var date = new Date(time);
+			    var year = date.getFullYear(),
+			        month = date.getMonth()+1,
+			        day = date.getDate(),
+			        hour = date.getHours(),
+			        min = date.getMinutes(),
+			        sec = date.getSeconds();
+			    var preArr = Array.apply(null,Array(10)).map(function(el, index) {
+			        return "0"+index;
+			    });
+			
+			    var newTime = format.replace(/YY/g,year)
+			                        .replace(/MM/g,preArr[month]||month)
+			                        .replace(/DD/g,preArr[day]||day)
+			                        .replace(/hh/g,preArr[hour]||hour)
+			                        .replace(/mm/g,preArr[min]||min)
+			                        .replace(/ss/g,preArr[sec]||sec);
+			
+			    return newTime;         
+			}
+			
+			//前置0
+			function Pre(...rest){
+				var preArr = Array.apply(null,Array(10)).map(function(el,index) {
+			        return "0"+index;
+			    });
+				var nd = (preArr[rest[0]]||rest[0]);
+				var nh = (preArr[rest[1]]||rest[1]);
+				var nm = (preArr[rest[2]]||rest[2]);
+				var ns = (preArr[rest[3]]||rest[3]);
+				return {nd,nh,nm,ns};  
+			}
+			
+			
+			//计算倒计时
+			function Dj()
+			{
+				var nt = new Date();
+			    var ft = new Date(2019,4,26,8,5,3);
+					
+			 	var diff = ft.getTime() - nt.getTime();
+		 		
+		 		var d =  parseInt(diff/(24*60*60*1000));
+		 		diff = diff%(24*60*60*1000);
+		
+		 		var h = parseInt(diff/(60*60*1000));
+				diff = diff%(60*60*1000);
+		
+		 		var m = parseInt(diff/(60*1000));
+		 		diff = diff%(60*1000);
+		
+				var s = parseInt(diff/1000);
+				
+				spans[0].innerHTML = Pre(d,h,m,s).nd;
+				spans[1].innerHTML = Pre(d,h,m,s).nh;
+				spans[2].innerHTML = Pre(d,h,m,s).nm;
+				spans[3].innerHTML = Pre(d,h,m,s).ns;
+			}
+			Dj();
+			setInterval(Dj,1000);
+			
+			nt.innerHTML = formatDate(ntime,"YY年MM月DD日 hh:mm:ss");
+			ft.innerHTML = formatDate(ftime,"YY年MM月DD日  hh:mm:ss");
+		</script>
+	</body>
+</html>

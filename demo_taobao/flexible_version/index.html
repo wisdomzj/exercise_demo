@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝首页flexible版</title>
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!--header start-->
+		<div id="header">
+			<!--logo-->
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAwCAYAAACmCaIKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABZNJREFUeNrUWg9k3Fccv+QqhHCEIxzh5rgZmUynjE246YybUjKdK5UZJZXpZDY3q1an0wmp1E1rtMYmlWqlQqqVSaVamVRnlWplEqlGp3Gxk0itVo1fv9/6/rrn9f35vrt3ueuHD3e/e+/97vve9+97ryEIgkiVMAlcA14mLkXqDSi8gTHgEPBO8D9uAvuBTYZ+qeBlzAMHgFlgs+W9m0LTj1uBxUAPnJC4pu9AYMa/wESthW/QqH0r8CYwaVGcK8APgBvCs2bgAxpDh7PATyxjdwDb6D+kgS30PSG0eQT8iz7/DbwLvA5crkTtvw34yEp9P7O0fwpMK7RsL/AnMqunQWWYAxaAHeWo/ZjDi45Iff+0tP8ZuA2YB44D14PqYhTY6SL8uMPgh4V+2aA+gZq0X5Zzi8GWs8yAcVX4fNhzMFoA/gG8TUS7fkKfQ7/QDnwH2CP5AxFR4BD5jn02m28B3mfM6JTQJ+dhhR4Ch2ks12jQRCZoQz8n1KFTmjUMconygHCyHlQgMOYSGU8hzOas/wMmbcIjo8A+WuEiaQMKvdMxrpv+yCBwB02gD+Gj5O1NKHCE5/BdD6EpzBx9JTB9lnctYrvGCh1SHDhCDkUHTEROAn+1jPWNR0f5u+X35POkyZCbT1icDtr7jEWl+6ldwhLPC55T1zaGpnXqOk9Rg6LGEdkER/QK7YcN7WYsRVI5jDGE36WK833ALkGtJ4DfEUO0WdTqGKl6hMbKWUxn2pO6/wA8z2yblGes3aCeaAatUvucIh/4hTxuGHvnNzGT63VY+UHZ4Z2i6kmF7cBr0qqfAb4OPECODWf9U6HKOwpMReoTcXnVHzJmbJHayloTl2w3U4Mc3mXlJ+R6PgY8QnZvAubY7wu1tIwU2XFc8duXQj3QDcxb3nWZNIsD3CpbITlWLW1vmXZxbKVpMUwTFZ52lhEBIvTdhuEqefs5XZKDldTbwC/IlnVe+pwiwcHvJUX7fUIEqAe0mDI8dFrHyaFd1LTZCtwhPSvR1taZOhbcKrxo3x8BD2l+V9X9WHPvprhbj4Kztq5lqjK1aalNvoY7Ni7eftW1sFF53abIq4moq/D36BRGxMorKvzGFscOzYoMcEH6vkzRglsSt1valGjSOXBZiMeuNr9TYTu5CqovH3E+rSi9OTZ/30Xt0bYPajKwzUYX1Q2LwDng/jLGeOIi/FfATunZbSmhmcUAYmDMg+BTxLxwnNZDJumCx1zht2v25C9ImvGGaaYVzrIc3NL4jm7HcdY4wqcM+3RnpcPNqMVx+cBvmud9juOs2IRP0CWDVs0K3HWI92uehL+heb6N0m0uSo2WMDRhCEUnXwod9rBWKbCOmDH83usw1rJOeHRM4wYbXlFsRZfIrnVA7cmUIXCMhEJnOma5M5BzcKrKlUevOUpqpMOPipXekMxAhRGyzbSD8Fg4naBDSU4S1sNOiBQHlNcsycG6YiMz5FHHQuSfMguYSUPfOea+fZecFU0zOg0Ysq0EHVZUC6t08wPfNWJox6ks2xoFZzRJ59wRS6w+Zqn9D1Uho8N64Wvga8DT9Oyqoh3eK/iYEXnuPR+TVOQOc+ZPMHP2godVXqcT4V3COYC82xxqw5Bwz4dzXD4YntKec7jakXQoWj6kgw4uiiRsnk5+uYVWs3Q8PcaQIx1eRcOsrJ+KlhaDqmBo21OGyobXxxLCgceSUH5yyt8chdIbhkwRo1PBEqXCSPU5fhD37ZPUOavZzHyTEcqqsuMCLApZ5gJNwiMhs8ww9gXCiX7vRZhWqFK3wmZGa3hTstNTpJiXT5pUSc552q4+Lpy5fV/D7aaMhzFQprci8uVnxqwP1viO7HgFq33J5Dwbqnjl3BeayIl1CJspHfQ8JeTyS5Rn4AbLdSp9jXdwnwkwAGXl2KVI+BEMAAAAAElFTkSuQmCC" />
+			
+			<!--search-->
+			<a href="#" class="dpr2size-24">
+				<i class="iconfont dpr2size-26">&#xe611;</i>
+				寻找宝贝店铺
+			</a>
+		
+		</div>
+		<!--header end-->
+		
+		
+		<!--shuffing start-->
+		<div class="swiper-container" id="shuffing">
+		    
+		    <!--shuffingcon-->
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_01.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_02.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_03.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_04.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_05.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_06.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_07.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="picture/shuffing/shuffimg_08.jpg" />
+		        </div>
+		    </div>
+		    
+		    <!--page-->
+		    <div class="swiper-pagination"></div>
+		</div>
+		<!--shufffing end-->
+		
+		
+		<!--modulenav statr-->
+		<div id="modulenav">
+			
+			<!--circularbg-->
+			<div class="circularbg"></div>
+			
+			<!--nav-->
+			<ul>
+				<li>
+					<a><img src="picture/modulenav/icon_01.png" /></a>
+					<p class="dpr2size-24">天猫</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_02.png" /></a>
+					<p class="dpr2size-24">聚划算</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_03.png" /></a>
+					<p class="dpr2size-24">天猫国际</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_04.png" /></a>
+					<p class="dpr2size-24">外卖</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_05.png" /></a>
+					<p class="dpr2size-24">天猫超市</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_06.png" /></a>
+					<p class="dpr2size-24">充值中兴</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_07.png" /></a>
+					<p class="dpr2size-24">飞猪旅行</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_08.png" /></a>
+					<p class="dpr2size-24">领金币</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_09.png" /></a>
+					<p class="dpr2size-24">拍卖</p>
+				</li>
+				<li>
+					<a><img src="picture/modulenav/icon_10.png" /></a>
+					<p class="dpr2size-24">更多</p>
+				</li>
+			</ul>
+		</div>
+		<!--modulenav end-->
+		
+		
+		<!--headlines start-->
+		<div id="headlines">
+			
+			<!--left_img-->
+			<div class="taobaoline_bg">
+				<img src="picture/headlines/leftimg.png" />
+			</div>
+		
+			<!--right_news-->
+			<div class="newsbox">
+				<div class="swiper-container_news">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide slide_01">
+				        	<div class="slide_con">
+				        		<a class="dpr2size-26"><span>旅行</span>月季修剪后，巧用3个“妙法”，猛长芽</a>
+			        			<a class="dpr2size-26"><span>痩身</span>月季修剪后，巧用3个“妙法”，猛长芽</a>
+				        	</div>
+				        </div>
+				        <div class="swiper-slide slide_02">
+				        	<div class="slide_con">
+				        		<a class="dpr2size-26"><span>美食</span>月季修剪后，巧用3个“妙法”，猛长芽</a>
+			        			<a class="dpr2size-26"><span>动漫</span>月季修剪后，巧用3个“妙法”，猛长芽</a>
+				        	</div>
+				        </div>
+				        <div class="swiper-slide slide_03">
+				        	<div class="slide_con">
+				        		<a class="dpr2size-26"><span>热文</span>月季修剪后，巧用3个“妙法”，猛长芽</a>
+			        			<a class="dpr2size-26"><span>园艺</span>月季修剪后，巧用3个“妙法”，猛长芽</a>
+				        	</div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		
+		</div>
+		<!--headlines end-->
+		
+		
+		<!--commodity start-->
+		<div id="commodity">
+			<ul>
+				<li>
+					<div class="lititle">
+						<img src="picture/commodity/title_01.png" />
+					</div>
+					<div class="insets samestyle">
+						<img src="picture/commodity/insets_01.png" />
+					</div>
+					<div class="largerversion samestyle">
+						<img src="picture/commodity/largerversion_01.png"/>
+					</div>
+				</li>
+				<li>
+					<div class="lititle">
+						<img src="picture/commodity/title_02.png" />
+					</div>
+					<div class="insets samestyle">
+						<img src="picture/commodity/insets_02.png" />
+						<p class="dpr2size-26">高颜值美物</p>
+					</div>
+					<div class="largerversion samestyle">
+						<img src="picture/commodity/largerversion_02.png"/>
+					</div>
+				</li>
+				<li>
+					<div class="lititle">
+						<img src="picture/commodity/title_03.png" />
+					</div>
+					<div class="insets samestyle">
+						<img src="picture/commodity/insets_03.png" />
+						<p class="dpr2size-26">有料小视频</p>
+					</div>
+					<div class="largerversion samestyle">
+						<img src="picture/commodity/largerversion_03.png"/>
+					</div>
+				</li>
+				<li>
+					<div class="lititle">
+						<img src="picture/commodity/title_04.png" />
+					</div>
+					<div class="insets samestyle">
+						<img src="picture/commodity/insets_04.png" />
+						<p class="dpr2size-26">购物全攻略</p>
+					</div>
+					<div class="largerversion samestyle">
+						<img src="picture/commodity/largerversion_04.png"/>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--commodity end-->
+		
+		
+		<!--live start-->
+		<div id="live">
+			<div class="sametitle">
+				<img src="picture/live/livetitlebg.png"/>
+			</div>
+			<ul>
+				<li class="item_01">
+					<img src="picture/live/live_03.png" class="bg"/>
+					<img src="picture/live/live_01.png" class="bg"/>
+					<img src="picture/live/live_02.png" class="redhearts" />
+					<div class="liveinfo">
+						<p class="pcor_01 dpr2size-26">“直播怎么那么好看”</p>
+						<p class="pcor_02 dpr2size-24">“钱包越来越扁”</p>
+					</div>
+				</li>
+				<li class="item_02">
+					<img src="picture/live/live_04.png" class="bg"/>
+					<img src="picture/live/live_01.png" class="bg"/>
+					<div class="liveinfo">
+						<p class="pcor_01 dpr2size-26">主播优选</p>
+						<p class="pcor_02 dpr2size-24">米你遥控飞机</p>
+					</div>
+				</li>
+				<li>
+					<img src="picture/live/live_05.png" class="bg"/>
+					<img src="picture/live/live_01.png" class="bg"/>
+					<img src="picture/live/live_06.png" class="newlive" />
+				</li>
+				<li>
+					<img src="picture/live/live_08.png" class="bg"/>
+					<img src="picture/live/live_01.png" class="bg"/>
+					<img src="picture/live/live_06.png" class="newlive" />
+				</li>
+				<li>
+					<img src="picture/live/live_09.png" class="bg"/>
+					<img src="picture/live/live_01.png" class="bg"/>
+					<img src="picture/live/live_06.png" class="newlive" />
+				</li>
+			</ul>
+			<div class="textviewboxs">
+				<div class="textview">
+					<p class="chcor_b dpr2size-26">全球现场</p>
+					<p class="chcor_g dpr2size-24">套脚运动鞋</p>
+				</div>
+				<div class="textview">
+					<p class="chcor_b dpr2size-26">亲子乐园</p>
+					<p class="chcor_g dpr2size-24">都是宝宝！</p>
+				</div>
+				<div class="textview">
+					<p class="chcor_b dpr2size-26">乐家乐活</p>
+					<p class="chcor_g dpr2size-24">双爱折叠床</p>
+				</div>
+				<div class="recommend">
+					<p class="bor dpr2size-24">新声代</p>
+					<p class="rec_con dpr2size-24">淘宝歌王battle大战火热开赛</p>
+					<p class="rec_link dpr2size-24">真的不pick一下？</p>
+				</div>
+			</div>
+		</div>
+		<!--live end-->
+		
+		
+		<!--buy start-->
+		<div class="samemodule">
+			<div class="topcon">
+				<div class="sametitle">
+					<img src="picture/buy/buytitlebg.jpg" />
+				</div>
+				<div class="samelbox">
+					<img src="picture/buy/buy_01.jpg"/>
+					<img src="picture/buy/buycoverbg.png" />
+					<p class="samelpstyle_01 samelpstyle_same dpr2size-28">先别买苹果x，更大的屏幕来了</p>
+				</div>
+				<div class="samerbox">
+					<p class="brand dpr2size-26">resexxy</p>
+					<p class="countries dpr2size-24">日本</p>
+					<div class="brandclothes">
+						<img src="picture/buy/buy_02.jpg"/>
+					</div>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div class="font same">
+						<p class="fcor_same fcor_blue dpr2size-26">进口优化</p>
+						<p class="pcon dpr2size-24">正品保障15天售后无忧</p>
+					</div>
+					<div class="img same">
+						<img src="picture/buy/buy_03.jpg" />
+						<img src="picture/buy/buy_04.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">全球品牌动态</p>
+						<p class="pcon dpr2size-24">3186个品牌资讯和上新</p>
+					</div>
+					<div class="img same">
+						<img src="picture/buy/buy_05.jpg" />
+						<img src="picture/buy/buy_06.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">全球购</p>
+						<p class="pcon dpr2size-24">新奇淘淘好物免费使用</p>
+					</div>
+					<div class="img same">
+						<img src="picture/buy/buy_07.jpg" />
+						<img src="picture/buy/buy_08.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">海淘笔记</p>
+						<p class="pcon dpr2size-24">百万口碑好货真实评测</p>
+					</div>
+					<div class="img same">
+						<img src="picture/buy/buy_09.jpg" />
+						<img src="picture/buy/buy_10.jpg" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--buy end-->
+		
+		
+		<!--found start-->
+		<div class="samemodule">
+			<div class="topcon">
+				<div class="sametitle">
+					<img src="picture/found/foundtitlebg.jpg" />
+				</div>
+				<div class="samelbox">
+					<img src="picture/found/found_01.jpg" />
+					<img src="picture/found/foundcoverbg.png" />
+					<p class="samelpstyle_02 samelpstyle_same dpr2size-28">给孩子买一条公主裙,能影响她的整个世界</p>
+				</div>
+				<div class="samerbox">
+					<img src="picture/found/found_02.jpg" class="samerimg" />
+					<img src="picture/found/foundcoverbg.png" class="samerimg" />
+					<div class="textbg textbg_same textbg_01 dpr2size-24">#生活神器</div>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div class="font same">
+						<p class="fcor_same near fcor_yellow dpr2size-26">极有家</p>
+						<p class="pcon dpr2size-24">15万爆改上海老宅变摩洛哥宫殿</p>
+					</div>
+					<div class="img same">
+						<img src="picture/found/found_03.jpg" />
+						<img src="picture/found/found_04.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">生活家</p>
+						<p class="pcon dpr2size-24">浪漫不羁 波西米亚灯罩</p>
+					</div>
+					<div class="img same">
+						<img src="picture/found/found_05.jpg" />
+						<img src="picture/found/found_06.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">品质好物</p>
+						<p class="pcon dpr2size-24">高颜值 好品质美物</p>
+					</div>
+					<div class="img same">
+						<img src="picture/found/found_07.jpg" />
+						<img src="picture/found/found_08.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">苏宁易购</p>
+						<p class="pcon dpr2size-24">爆款家电5折购</p>
+					</div>
+					<div class="img same">
+						<img src="picture/found/found_09.jpg" />
+						<img src="picture/found/found_10.jpg" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--found end-->
+		
+		
+		<!--coldplay start-->
+		<div class="samemodule">
+			<div class="topcon">
+				<div class="sametitle">
+					<img src="picture/coldplay/coldplaytitlebg.png"/>
+				</div>
+				<div class="samelbox">
+					<img src="picture/coldplay/coldplay_01.jpg" />
+					<img src="picture/found/foundcoverbg.png" />
+					<p class="samelpstyle_02 samelpstyle_same dpr2size-28">999元预算买到3款降价 "水桶机"</p>
+				</div>
+				<div class="samerbox">
+					<img src="picture/coldplay/coldplay_02.jpg" class="samerimg" />
+					<img src="picture/coldplay/coldplaycoverbg.png" class="samerimg" />
+					<div class="textbg textbg_same textbg_02 dpr2size-24">#潮流跑步疾风</div>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">潮男养成</p>
+						<p class="pcon dpr2size-24">有品有范有风尚</p>
+					</div>
+					<div class="img same">
+						<img src="picture/coldplay/coldplay_03.jpg" />
+						<img src="picture/coldplay/coldplay_04.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">装备天下</p>
+						<p class="pcon dpr2size-24">武装你的兴趣爱好</p>
+					</div>
+					<div class="img same">
+						<img src="picture/coldplay/coldplay_05.jpg" />
+						<img src="picture/coldplay/coldplay_06.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">科技前沿</p>
+						<p class="pcon dpr2size-24">发现只能数码</p>
+					</div>
+					<div class="img same">
+						<img src="picture/coldplay/coldplay_07.jpg" />
+						<img src="picture/coldplay/coldplay_08.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">男得好物</p>
+						<p class="pcon dpr2size-24">潮流尖货 限时发货</p>
+					</div>
+					<div class="img same">
+						<img src="picture/coldplay/coldplay_09.jpg" />
+						<img src="picture/coldplay/coldplay_10.jpg" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--coldplay end-->
+		
+		
+		<!--affordable start-->
+		<div class="samemodule">
+			<div class="topcon">
+				<div class="sametitle">
+					<img src="picture/affordable/affordabletitlebg.png" />
+				</div>
+				<div class="samelbox">
+					<img src="picture/affordable/affordable_01.jpg" />
+					<img src="picture/found/foundcoverbg.png" />
+				</div>
+				<div class="samerbox">
+					<img src="picture/affordable/affordable_02.jpg" class="samerimg" />
+					<img src="picture/found/foundcoverbg.png" class="samerimg" />
+					<div class="textbg textbg_same textbg_03 dpr2size-24">#39元惠生活</div>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div class="font same">
+						<p class="fcor_same fcor_orange dpr2size-26">天天特价</p>
+						<p class="pcon dpr2size-24">39元好惠全家</p>
+					</div>
+					<div class="img same">
+						<img src="picture/affordable/affordable_03.jpg" />
+						<img src="picture/affordable/affordable_04.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">品牌闪购</p>
+						<p class="pcon dpr2size-24">领券享折上折</p>
+					</div>
+					<div class="img same">
+						<img src="picture/affordable/affordable_05.jpg" />
+						<img src="picture/affordable/affordable_06.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">天猫Outles</p>
+						<p class="pcon dpr2size-24">365天超低价</p>
+					</div>
+					<div class="img same">
+						<img src="picture/affordable/affordable_07.jpg" />
+						<img src="picture/affordable/affordable_08.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">淘宝心选</p>
+						<p class="pcon dpr2size-24">官方自营品牌</p>
+					</div>
+					<div class="img same">
+						<img src="picture/affordable/affordable_09.jpg" />
+						<img src="picture/affordable/affordable_10.jpg" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--affordable end-->
+		
+		
+		<!--fashion start-->
+		<div class="samemodule">
+			<div class="topcon">
+				<div class="sametitle">
+					<img src="picture/fashion/fashiontitlebg.png" />
+				</div>
+				<div class="samelbox">
+					<img src="picture/fashion/fashion_01.jpg" />
+					<img src="picture/found/foundcoverbg.png" />
+					<p class="samelpstyle_02 samelpstyle_same dpr2size-28">70后女人并不老!这样穿搭时髦又年轻</p>
+				</div>
+				<div class="samerbox">
+					<img src="picture/fashion/fashion_02.jpg" class="samerimg" />
+					<img src="picture/found/foundcoverbg.png" class="samerimg" />
+					<div class="textbg textbg_same textbg_04 dpr2size-24">#出游装备</div>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div class="font same">
+						<p class="fcor_same fcor_red dpr2size-26">iFashion</p>
+						<p class="pcon dpr2size-26">学明星变时髦精</p>
+					</div>
+					<div class="img same">
+						<img src="picture/fashion/fashion_03.jpg" />
+						<img src="picture/fashion/fashion_04.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">全球时尚</p>
+						<p class="pcon dpr2size-24">年会这么穿,博人眼球</p>
+					</div>
+					<div class="img same">
+						<img src="picture/fashion/fashion_05.jpg" />
+						<img src="picture/fashion/fashion_06.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">新选大赏</p>
+						<p class="pcon dpr2size-24">不能错过的明星同款大衣</p>
+					</div>
+					<div class="img same">
+						<img src="picture/fashion/fashion_07.jpg" />
+						<img src="picture/fashion/fashion_08.jpg" />
+					</div>
+				</li>
+				<li>
+					<div class="font same">
+						<p class="dpr2size-26">非常大牌</p>
+						<p class="pcon dpr2size-24">年会这么穿,博人眼球</p>
+					</div>
+					<div class="img same">
+						<img src="picture/fashion/fashion_09.jpg" />
+						<img src="picture/fashion/fashion_10.jpg" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--fashion end-->
+		
+		
+		<!--linlayout start-->
+		<div id="linlayout">
+			<div class="framviewboxs">
+				<div class="framview">
+					<div class="top">
+						<p class="dpr2size-26">淘宝众筹</p>
+						<p class="small dpr2size-24">除味抑菌宝</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/linlayout/viewimg_01.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="dpr2size-26">淘宝众筹</p>
+						<p class="small dpr2size-24">除味抑菌宝</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/linlayout/viewimg_02.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="dpr2size-26">淘宝众筹</p>
+						<p class="small dpr2size-24">除味抑菌宝</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/linlayout/viewimg_03.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="dpr2size-26">淘宝众筹</p>
+						<p class="small dpr2size-24">除味抑菌宝</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/linlayout/viewimg_04.jpg" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="imageviewboxs">
+				<div class="imageview">
+					<div class="font same">
+						<p class="dpr2size-26">口碑生活</p>
+						<p class="pcon dpr2size-24">坚持运动,苗条一夏</p>
+					</div>
+					<div class="img same">
+						<img src="picture/linlayout/viewimg_06.jpg" />
+						<img src="picture/linlayout/viewimg_05.jpg" />
+					</div>
+				</div>
+				<div class="imageview">
+					<div class="font same">
+						<p class="dpr2size-26">阿里健康</p>
+						<p class="pcon dpr2size-24">爱护视力,明眸媚眼</p>
+					</div>
+					<div class="img same">
+						<img src="picture/linlayout/viewimg_07.jpg" />
+						<img src="picture/linlayout/viewimg_08.jpg" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottominfo">
+				<a class="auction auc_same dpr2size-24">司法拍卖</a>
+				<a class="auc_same dpr2size-24">淘乡甜</a>
+				<a class="omit">...</a>
+				<a class="server dpr2size-24">更多服务</a>
+			</div>
+		</div>
+		<!--linlayout end-->
+		
+		
+		<!--life start-->
+		<div id="life">
+			<div class="topcon">
+				<div class="sametitle">
+					<img src="picture/life/lifetitlebg.png" />
+				</div>
+				<div class="ification">
+					<img src="picture/life/life_01.jpg" />
+					<img src="picture/life/lifecoverbg.png" />
+					<p class="dpr2size-30">超级大学生</p>
+				</div>
+				<div class="ification">
+					<img src="picture/life/life_02.jpg" />
+					<img src="picture/life/lifecoverbg.png" />
+					<p class="dpr2size-30">华丽上班族</p>
+				</div>
+				<div class="ification">
+					<img src="picture/life/life_03.jpg" />
+					<img src="picture/life/lifecoverbg.png" />
+					<p class="dpr2size-30">格子控</p>
+				</div>
+			</div>
+			
+			<div class="viewboxs">
+				<div class="framview">
+					<div class="top">
+						<p class="big dpr2size-26">就送咱爸妈</p>
+						<p class="small dpr2size-24">褪黑素软胶囊</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/life/life_04.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="big dpr2size-26">红酒达人</p>
+						<p class="small dpr2size-24">开启你的味蕾</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/life/life_05.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="big dpr2size-26">意气书生</p>
+						<p class="small dpr2size-24">一本大海</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/life/life_06.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="big dpr2size-26">厨艺达人</p>
+						<p class="small dpr2size-24">自动养生杯</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/life/life_07.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="big dpr2size-26">宝宝营养师</p>
+						<p class="small dpr2size-24">嘉宝零食</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/life/life_08.jpg" />
+					</div>
+				</div>
+				<div class="framview">
+					<div class="top">
+						<p class="big dpr2size-26">健身狂人</p>
+						<p class="small dpr2size-24">白金谷氨基酸</p>
+					</div>
+					<div class="bottom">
+						<img src="picture/life/life_09.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--life end-->
+		
+		
+		<!--goodshops start-->
+		<div id="goodshops">
+			<div class="topcon">
+				<div class="sametitle">
+					<img src="picture/goodshops/goodshopstitlebg.png" />
+				</div>
+				<div class="samelbox">
+					<img src="picture/goodshops/goodshop_01.jpg" />
+					<img src="picture/goodshops/goodshopscoverbg.png" />
+					<p class="samelpstyle_02 samelpstyle_same dpr2size-28">
+						<span class="dpr2size-26" style="color:#FED70B;">特色好店</span><br />
+						<span class="dpr2size-26">邂逅品库，给家带来别样的温馨</span>
+					</p>
+				</div>
+				<div class="samerbox">
+					<img src="picture/goodshops/goodshop_02.jpg" class="samerimg" />
+					<img src="picture/goodshops/goodshopscoverbg.png" class="samerimg" />
+					
+					<div class="textbg textbg_same textbg_05 dpr2size-26">#神店推荐</div>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<p><span class="strong dpr2size-30">万能市集</span><span class="span dpr2size-26">发现深藏的好店</span></p>
+					<div class="dview">
+						<div class="ldview">
+							<img src="picture/goodshops/goodshop_03.jpg" />
+						</div>
+						<div class="rdview">
+							<img src="picture/goodshops/goodshop_04.jpg" />
+							<img src="picture/goodshops/goodshop_05.jpg" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<p><span class="strong dpr2size-30">淘宝江湖</span><span class="span dpr2size-26">找点乐子</span></p>
+					<div class="dview">
+						<div class="ldview">
+							<img src="picture/goodshops/goodshop_06.jpg" />
+						</div>
+						<div class="rdview">
+							<img src="picture/goodshops/goodshop_07.jpg" />
+							<img src="picture/goodshops/goodshop_08.jpg" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<p><span class="strong dpr2size-30">深藏不露</span><span class="span dpr2size-26">日常版の造物节</span></p>
+					<div class="dview">
+						<div class="ldview">
+							<img src="picture/goodshops/goodshop_09.jpg" />
+						</div>
+						<div class="rdview">
+							<img src="picture/goodshops/goodshop_10.jpg" />
+							<img src="picture/goodshops/goodshop_11.jpg" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<p><span class="strong dpr2size-30">高手林立</span><span class="span dpr2size-26">好店不怕巷子深</span></p>
+					<div class="dview">
+						<div class="ldview">
+							<img src="picture/goodshops/goodshop_12.jpg" />
+						</div>
+						<div class="rdview">
+							<img src="picture/goodshops/goodshop_13.jpg" />
+							<img src="picture/goodshops/goodshop_14.jpg" />
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--goodshops end-->
+		
+		
+		<!--guesslike start-->
+		<div id="guesslike">
+			
+			<!--guesstitle-->
+			<div class="guesstitle dpr2size-30">
+				<i class="iconfont dpr2size-30">&#xe611;</i>
+				猜你喜欢
+			</div>
+			
+			<!--guesscon-->
+			<div class="guesscon">
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_01.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">399</span>
+							<span class="pay dpr2size-24">66人付款</span>
+						</p>
+					</div>
+				</div>
+				
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_02.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">1399</span>
+							<span class="pay dpr2size-24">71人付款</span>
+						</p>
+					</div>
+				</div>		
+			
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_03.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">999</span>
+							<span class="pay dpr2size-24">43人付款</span>
+						</p>
+					</div>
+				</div>
+				
+				
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_04.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">1125</span>
+							<span class="pay dpr2size-24">79人付款</span>
+						</p>
+					</div>
+				</div>
+				
+				
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_05.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">459</span>
+							<span class="pay dpr2size-24">895人付款</span>
+						</p>
+					</div>
+				</div>
+			
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_06.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">565</span>
+							<span class="pay dpr2size-24">9898人付款</span>
+						</p>
+					</div>
+				</div>
+			
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_07.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">748</span>
+							<span class="pay dpr2size-24">787人付款</span>
+						</p>
+					</div>
+				</div>
+				
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_08.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">349</span>
+							<span class="pay dpr2size-24">987人付款</span>
+						</p>
+					</div>
+				</div>
+				
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_09.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">234</span>
+							<span class="pay dpr2size-24">89人付款</span>
+						</p>
+					</div>
+				</div>
+				
+				<div class="guessseparate">
+					<div class="img"><img src="picture/guess/guess_10.jpg"></div>
+					<div class="describe">
+						<p class="descon dpr2size-26">[为你推荐]【辛妈老粗布】清货。处理经典老粗布凉席一批。质量非常好。</p>
+						<p class="desinfo">
+							<span class="price dpr2size-24">¥</span>
+							<span class="price dpr2size-28">798</span>
+							<span class="pay dpr2size-24">56人付款</span>
+						</p>
+					</div>
+				</div>
+				
+			</div>
+		
+		</div>
+		<!--guesslike end-->
+		
+		
+		<!--footer start-->
+		<div id="footer">
+			<div class="funboxs">
+				<a class="dpr2size-28">登录</a>
+				<a class="dpr2size-28">注册</a>
+				<a class="dpr2size-28">手淘APP</a>
+				<a class="dpr2size-28">用户反馈</a>
+			</div>
+			<p class="dpr2size-26">© 2018 浙B2-20080224 <a>服务中心</a></p>
+		</div>
+		<!--footer end-->
+		
+		
+		<!--taskbar start-->
+		<div id="taskbar">
+			<div>
+				<span class="icon">
+					<i class="iconfont dpr2size-40">&#xe626;</i>
+				</span>
+				<p class="dpr2size-28">首页</p>
+			</div>
+			<div>
+				<span class="icon">
+					<i class="iconfont dpr2size-40">&#xe606;</i>
+				</span>
+				<p class="dpr2size-28">物流</p>
+			</div>
+			<div>
+				<span class="icon">
+					<i class="iconfont dpr2size-40">&#xe622;</i>
+				</span>
+				<p class="dpr2size-28">购物车</p>
+			</div>
+			<div>
+				<span class="icon">
+					<i class="iconfont dpr2size-40">&#xe653;</i>
+				</span>
+				<p class="dpr2size-28">我的淘宝</p>
+			</div>
+			<div>
+				<span class="icon">
+					<i class="iconfont dpr2size-40">&#xe679;</i>
+				</span>
+				<p class="dpr2size-28">更多</p>
+			</div>
+		</div>
+		<!--taskbar end-->
+		
+		
+		<!--returntop start-->
+		<div id="returntop">
+			<div class="tbicon"></div>
+			<div class="totop dpr2size-24"><i class="iconfont dpr2size-40">&#xe665;</i>顶部</div>
+		</div>
+		<!--returntop end-->
+		
+	</body>
+</html>

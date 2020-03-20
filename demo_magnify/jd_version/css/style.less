@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #F8F8F8;
+}
+
+#box{
+    width: 1200px;
+    height: 600px;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .insetsbox{
+        height: 450px;
+        width: 450px;
+        background:url(../img/insets.jpg);
+        background-size:100% 100%;
+        position: relative;
+        border: 1px solid #F2F2F2;
+        .movesquare{
+            height: 305px;
+            width: 305px;
+            background: yellow;
+            opacity: 0.5;
+        }
+        .cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            opacity: 0;
+        }
+    }
+    .larversionbox{
+        height: 544px;
+        width: 544px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #F2F2F2;
+    }
+}
+

@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100vw;
+  width: 100vw;
+  background: #F4F4F4;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../css/font/iconfont.eot');
+  src: url('../css/font/iconfont.eot?#iefix') format('embedded-opentype'), url('../css/font/iconfont.woff') format('woff'), url('../css/font/iconfont.ttf') format('truetype'), url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fsize_01 {
+  font-size: 3vw;
+}
+.fsize_02 {
+  font-size: 3.2vw;
+}
+.fsize_03 {
+  font-size: 3.4vw;
+}
+.fsize_04 {
+  font-size: 3.6vw;
+}
+.fsize_05 {
+  font-size: 3.8vw;
+}
+.fsize_06 {
+  font-size: 4vw;
+}
+.fsize_07 {
+  font-size: 4.5vw;
+}
+.titlebgstyle .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+.titlebgstyle .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+.textbgstyle.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_same {
+  background-size: 100% 100%;
+}
+.changetxetcolor.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 14vw 0.53333333vw;
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.changetxetcolor.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_same {
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.slidebgstyle.slide_01 {
+  background: url(../picture/headlines/slidebg_01.jpeg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle.slide_02 {
+  background: url(../picture/headlines/slidebg_02.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle.slide_03 {
+  background: url(../picture/headlines/slidebg_03.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle .slide_con {
+  height: 100%;
+  background: url(../picture/headlines/whitebg.png) no-repeat 60vw center;
+  background-size: auto 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+.slidebgstyle .slide_con a {
+  display: block;
+  width: 60vw;
+  height: 6vw;
+  line-height: 6vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slidebgstyle .slide_con a span {
+  color: #e60a1f;
+  border: 0.26666667vw solid #e60a1f;
+  border-radius: 0.66666667vw;
+  margin-right: 0.66666667vw;
+}
+.livelistyle.item_01 {
+  width: 66.66666667vw;
+}
+.livelistyle.item_01 .liveinfo {
+  position: absolute;
+  top: 24vw;
+  left: 3.33333333vw;
+  height: 8.53333333vw;
+  width: 40vw;
+}
+.livelistyle.item_01 .liveinfo p {
+  line-height: 4.26666667vw;
+}
+.livelistyle.item_01 .liveinfo .pcor_01 {
+  color: #fff;
+}
+.livelistyle.item_01 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle.item_02 .liveinfo {
+  position: absolute;
+  top: 24vw;
+  left: 3.33333333vw;
+  height: 8.53333333vw;
+  width: 20vw;
+}
+.livelistyle.item_02 .liveinfo p {
+  line-height: 4.26666667vw;
+}
+.livelistyle.item_02 .liveinfo .pcor_01 {
+  color: #fff;
+}
+.livelistyle.item_02 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.livelistyle .bg p {
+  line-height: 4.26666667vw;
+}
+.livelistyle .bg .pcor_01 {
+  color: #fff;
+}
+.livelistyle .bg .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .newlive {
+  position: absolute;
+  top: 29.6vw;
+  left: 0;
+  height: 4vw;
+  width: 8.53333333vw;
+}
+.livelistyle .newlive p {
+  line-height: 4.26666667vw;
+}
+.livelistyle .newlive .pcor_01 {
+  color: #fff;
+}
+.livelistyle .newlive .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .redhearts {
+  position: absolute;
+  top: 25.33333333vw;
+  left: 58vw;
+  height: 5.6vw;
+  width: 5.6vw;
+}
+.livelistyle .redhearts p {
+  line-height: 4.26666667vw;
+}
+.livelistyle .redhearts .pcor_01 {
+  color: #fff;
+}
+.livelistyle .redhearts .pcor_02 {
+  color: #CBC5C0;
+}
+.sametopconstyle {
+  margin-top: 8vw;
+}
+.sametopconstyle .topcon {
+  height: 33.6vw;
+  display: flex;
+  position: relative;
+}
+.sametopconstyle .topcon .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+.sametopconstyle .topcon .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .ification {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+}
+.sametopconstyle .topcon .ification img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .ification p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7.2vw;
+  width: 100%;
+  line-height: 7.2vw;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.4);
+  text-indent: 3.33333333vw;
+}
+.sametopconstyle .topcon .samelbox {
+  width: 66.66666667vw;
+  height: 100%;
+  position: relative;
+}
+.sametopconstyle .topcon .samelbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .samerbox {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+.sametopconstyle .topcon .samerbox .samerimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .samerbox .textbg {
+  position: absolute;
+  bottom: 2.66666667vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5.06666667vw;
+  width: 24vw;
+  line-height: 5.06666667vw;
+  text-align: center;
+  color: #fff;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_same {
+  background-size: 100% 100%;
+}
+.sametopconstyle .topcon .samerbox .brand {
+  margin-top: 0.66666667vw;
+  line-height: 5.2vw;
+  text-indent: 3.33333333vw;
+}
+.sametopconstyle .topcon .samerbox .countries {
+  line-height: 3.46666667vw;
+  background: url(../picture/buy/JP.png) no-repeat 2.66666667vw 0;
+  background-size: 3.2vw 3.2vw;
+  text-indent: 6vw;
+}
+.sametopconstyle .topcon .samerbox .brandclothes {
+  height: 24.26666667vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sametopconstyle .topcon .samerbox .brandclothes img {
+  height: 18.66666667vw;
+  width: 30.66666667vw;
+}
+.samelistyle {
+  height: 32.66666667vw;
+  width: 50%;
+  background: #fff;
+  float: left;
+}
+.samelistyle .same {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+.samelistyle .font {
+  height: 14vw;
+  flex-wrap: wrap;
+}
+.samelistyle .font p {
+  width: 100%;
+  height: 4.66666667vw;
+  line-height: 4.8vw;
+  text-indent: 2vw;
+}
+.samelistyle .font p.pcon {
+  color: #999999;
+}
+.samelistyle .font p.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 14vw 0.53333333vw;
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.samelistyle .font p.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_same {
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.samelistyle .img {
+  height: 18.66666667vw;
+  justify-content: space-around;
+}
+.samelistyle .img img {
+  height: 16.53333333vw;
+  width: 16.53333333vw;
+}
+.samelpstyle_same {
+  position: absolute;
+  bottom: 3.33333333vw;
+  left: 2.66666667vw;
+  color: #fff;
+  line-height: 4.53333333vw;
+  width: 52.53333333vw;
+}
+.samelpstyle_01 {
+  height: 4.53333333vw;
+}
+.samelpstyle_02 {
+  height: 9.06666667vw;
+}

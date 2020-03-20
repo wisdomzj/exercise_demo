@@ -1,0 +1,121 @@
+@import "common";
+
+.mconboxs{
+    .mod_title{
+        height: 53px;
+        border-bottom: 1px solid #EBEBEB;
+        .mod_tf{
+            display: block;
+            float: left;
+            height: 25px;
+            width: 0 5px;
+            line-height: 25px;
+            text-align: center;
+            color: #333333;
+            margin: 22px 0 0 5px;
+            cursor: pointer;
+            &.spsty{
+                margin-left: 20px;
+            }
+            &.asty{
+                color: #1D71B2;
+            }
+        }     
+    }
+    .mod_con{
+        overflow: hidden;
+        padding: 20px 0;
+        .mod_conssty{
+            height: 566px;   
+        }
+        .mod_conl{
+            width: 238px;
+            border: 1px solid #EBEBEB;
+            float: left;
+            ul{
+                li{
+                    height: 45px;
+                    border-bottom: 1px solid #EBEBEB;
+                    line-height: 45px;
+                    text-align: center;
+                    position: relative;
+                    &.listy{
+                        background: #1D71B2;
+                        color: #fff;
+                    }
+                    .triangle{
+                        position: absolute;
+                        top: 50%;
+                        right: -8px;
+                        transform: translateY(-50%);
+                        height: 0px;
+                        width: 0px;
+                        border-style: solid;
+                        border-width: 8px 0 8px 8px;
+                        border-color: transparent transparent transparent #1D71B2;
+                    }
+                }
+            }
+        }
+        .mod_conr{
+            width: 920px;
+            height: 516px;
+            float: right;
+            .mod_crt{
+                color: #1D71B2;
+                height: 35px;
+                font-weight: 700;
+                line-height: 35px;
+                border-bottom: 1px solid #EAEAEA;
+                position: relative;
+                .bor{
+                    display: block;
+                    height: 2px;
+                    width: 92px;
+                    background: #234B7F;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                }
+            }            
+            .obmbox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 366px;
+                .detailed{
+                    overflow: hidden;
+                    height: 225px;
+                    width: 588px;
+                    .portrait{
+                        width: 215px;
+                        height: 100%;
+                        float: left;
+                        background:url(../img/portrait.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .introduce{
+                        width: 327px;
+                        height: 100%;
+                        float: right;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-content: space-between;
+                        p{
+                            line-height: 30px;
+                            width: 100%;
+                            .fl{
+                                float: left;
+                            }
+                            .fr{
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }            
+        }     
+    }
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无缝滑动版本二</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="box">
+			<ul class="ulbox">
+				<li class="fstyle">今天怎么样<strong>？</strong></li>
+				<li class="libox">
+					<ul class="list">
+						<li style="background: #4ec7f3;">还行</li>
+						<li style="background: #42c58a;">很糟糕</li>
+						<li style="background: #a0a0a0;">一般般</li>
+						<li style="background: #dc143c;">我想一想</li>
+					</ul>
+				</li>
+				<li class="fstyle">加油！努力！</li>
+			</ul>	
+		</div>
+		<script>
+			setInterval(function(){
+				$(".list").append($(".list li").first().height(0).last().animate({"height":80},800))
+			},1000)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1544 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100vw;
+  width: 100vw;
+  background: #F4F4F4;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../css/font/iconfont.eot');
+  src: url('../css/font/iconfont.eot?#iefix') format('embedded-opentype'), url('../css/font/iconfont.woff') format('woff'), url('../css/font/iconfont.ttf') format('truetype'), url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fsize_01 {
+  font-size: 3vw;
+}
+.fsize_02 {
+  font-size: 3.2vw;
+}
+.fsize_03 {
+  font-size: 3.4vw;
+}
+.fsize_04 {
+  font-size: 3.6vw;
+}
+.fsize_05 {
+  font-size: 3.8vw;
+}
+.fsize_06 {
+  font-size: 4vw;
+}
+.fsize_07 {
+  font-size: 4.5vw;
+}
+.titlebgstyle .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+.titlebgstyle .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+.textbgstyle.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_same {
+  background-size: 100% 100%;
+}
+.changetxetcolor.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 14vw 0.53333333vw;
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.changetxetcolor.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.changetxetcolor.fcor_same {
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.slidebgstyle.slide_01 {
+  background: url(../picture/headlines/slidebg_01.jpeg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle.slide_02 {
+  background: url(../picture/headlines/slidebg_02.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle.slide_03 {
+  background: url(../picture/headlines/slidebg_03.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle .slide_con {
+  height: 100%;
+  background: url(../picture/headlines/whitebg.png) no-repeat 60vw center;
+  background-size: auto 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+.slidebgstyle .slide_con a {
+  display: block;
+  width: 60vw;
+  height: 6vw;
+  line-height: 6vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slidebgstyle .slide_con a span {
+  color: #e60a1f;
+  border: 0.26666667vw solid #e60a1f;
+  border-radius: 0.66666667vw;
+  margin-right: 0.66666667vw;
+}
+.livelistyle.item_01 {
+  width: 66.66666667vw;
+}
+.livelistyle.item_01 .liveinfo {
+  position: absolute;
+  top: 24vw;
+  left: 3.33333333vw;
+  height: 8.53333333vw;
+  width: 40vw;
+}
+.livelistyle.item_01 .liveinfo p {
+  line-height: 4.26666667vw;
+}
+.livelistyle.item_01 .liveinfo .pcor_01 {
+  color: #fff;
+}
+.livelistyle.item_01 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle.item_02 .liveinfo {
+  position: absolute;
+  top: 24vw;
+  left: 3.33333333vw;
+  height: 8.53333333vw;
+  width: 20vw;
+}
+.livelistyle.item_02 .liveinfo p {
+  line-height: 4.26666667vw;
+}
+.livelistyle.item_02 .liveinfo .pcor_01 {
+  color: #fff;
+}
+.livelistyle.item_02 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.livelistyle .bg p {
+  line-height: 4.26666667vw;
+}
+.livelistyle .bg .pcor_01 {
+  color: #fff;
+}
+.livelistyle .bg .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .newlive {
+  position: absolute;
+  top: 29.6vw;
+  left: 0;
+  height: 4vw;
+  width: 8.53333333vw;
+}
+.livelistyle .newlive p {
+  line-height: 4.26666667vw;
+}
+.livelistyle .newlive .pcor_01 {
+  color: #fff;
+}
+.livelistyle .newlive .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .redhearts {
+  position: absolute;
+  top: 25.33333333vw;
+  left: 58vw;
+  height: 5.6vw;
+  width: 5.6vw;
+}
+.livelistyle .redhearts p {
+  line-height: 4.26666667vw;
+}
+.livelistyle .redhearts .pcor_01 {
+  color: #fff;
+}
+.livelistyle .redhearts .pcor_02 {
+  color: #CBC5C0;
+}
+.sametopconstyle {
+  margin-top: 8vw;
+}
+.sametopconstyle .topcon {
+  height: 33.6vw;
+  display: flex;
+  position: relative;
+}
+.sametopconstyle .topcon .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+.sametopconstyle .topcon .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .ification {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+}
+.sametopconstyle .topcon .ification img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .ification p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7.2vw;
+  width: 100%;
+  line-height: 7.2vw;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.4);
+  text-indent: 3.33333333vw;
+}
+.sametopconstyle .topcon .samelbox {
+  width: 66.66666667vw;
+  height: 100%;
+  position: relative;
+}
+.sametopconstyle .topcon .samelbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .samerbox {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+.sametopconstyle .topcon .samerbox .samerimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .samerbox .textbg {
+  position: absolute;
+  bottom: 2.66666667vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5.06666667vw;
+  width: 24vw;
+  line-height: 5.06666667vw;
+  text-align: center;
+  color: #fff;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_same {
+  background-size: 100% 100%;
+}
+.sametopconstyle .topcon .samerbox .brand {
+  margin-top: 0.66666667vw;
+  line-height: 5.2vw;
+  text-indent: 3.33333333vw;
+}
+.sametopconstyle .topcon .samerbox .countries {
+  line-height: 3.46666667vw;
+  background: url(../picture/buy/JP.png) no-repeat 2.66666667vw 0;
+  background-size: 3.2vw 3.2vw;
+  text-indent: 6vw;
+}
+.sametopconstyle .topcon .samerbox .brandclothes {
+  height: 24.26666667vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sametopconstyle .topcon .samerbox .brandclothes img {
+  height: 18.66666667vw;
+  width: 30.66666667vw;
+}
+.samelistyle {
+  height: 32.66666667vw;
+  width: 50%;
+  background: #fff;
+  float: left;
+}
+.samelistyle .same {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+.samelistyle .font {
+  height: 14vw;
+  flex-wrap: wrap;
+}
+.samelistyle .font p {
+  width: 100%;
+  height: 4.66666667vw;
+  line-height: 4.8vw;
+  text-indent: 2vw;
+}
+.samelistyle .font p.pcon {
+  color: #999999;
+}
+.samelistyle .font p.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 14vw 0.53333333vw;
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.samelistyle .font p.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samelistyle .font p.fcor_same {
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.samelistyle .img {
+  height: 18.66666667vw;
+  justify-content: space-around;
+}
+.samelistyle .img img {
+  height: 16.53333333vw;
+  width: 16.53333333vw;
+}
+.samelpstyle_same {
+  position: absolute;
+  bottom: 3.33333333vw;
+  left: 2.66666667vw;
+  color: #fff;
+  line-height: 4.53333333vw;
+  width: 52.53333333vw;
+}
+.samelpstyle_01 {
+  height: 4.53333333vw;
+}
+.samelpstyle_02 {
+  height: 9.06666667vw;
+}
+#header {
+  height: 10vw;
+  width: 100vw;
+  background: #FF852A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header img {
+  height: 5.6vw;
+  width: 7.33333333vw;
+}
+#header a {
+  display: block;
+  height: 7.2vw;
+  width: 86.66666667vw;
+  background: #FF4E22;
+  border-radius: 1.06666667vw;
+  color: #fff;
+  text-align: center;
+  line-height: 7.2vw;
+  text-decoration: none;
+}
+#header a i {
+  vertical-align: bottom;
+}
+#shuffing {
+  height: 32.26666667vw;
+  margin-top: 10vw;
+}
+#shuffing .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+#shuffing .swiper-pagination {
+  bottom: 2.4vw;
+}
+#shuffing .swiper-pagination-bullet {
+  width: 2vw;
+  height: 2vw;
+  background: #fff;
+  opacity: 0.4;
+  margin-right: 1.33333333vw;
+}
+#shuffing .swiper-pagination-bullet-active {
+  background: #ff5000;
+  opacity: 1;
+}
+#modulenav {
+  background: #fff;
+  position: relative;
+  z-index: 99;
+}
+#modulenav .circularbg {
+  height: 2.66666667vw;
+  width: 100%;
+  position: absolute;
+  top: -2.26666667vw;
+  left: 0;
+  background: url(../picture/modulenav/bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+#modulenav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#modulenav ul li {
+  width: 20vw;
+  height: 18.93333333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#modulenav ul li a {
+  display: block;
+  width: 75%;
+}
+#modulenav ul li a img {
+  width: 100%;
+  height: 100%;
+}
+#modulenav ul li p {
+  line-height: 5.33333333vw;
+  text-align: center;
+}
+#headlines {
+  height: 16vw;
+  background: #fff;
+}
+#headlines .taobaoline_bg {
+  height: 100%;
+  width: 15.33333333vw;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#headlines .taobaoline_bg img {
+  height: 10vw;
+  width: 10vw;
+}
+#headlines .newsbox {
+  height: 100%;
+  width: 84.66666667vw;
+  float: left;
+  overflow: hidden;
+}
+#headlines .newsbox .swiper-container_news {
+  height: 100%;
+}
+#headlines .newsbox .swiper-container_news .swiper-slide.slide_01 {
+  background: url(../picture/headlines/slidebg_01.jpeg) no-repeat right center;
+  background-size: auto 100%;
+}
+#headlines .newsbox .swiper-container_news .swiper-slide.slide_02 {
+  background: url(../picture/headlines/slidebg_02.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+#headlines .newsbox .swiper-container_news .swiper-slide.slide_03 {
+  background: url(../picture/headlines/slidebg_03.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+#headlines .newsbox .swiper-container_news .swiper-slide .slide_con {
+  height: 100%;
+  background: url(../picture/headlines/whitebg.png) no-repeat 60vw center;
+  background-size: auto 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+#headlines .newsbox .swiper-container_news .swiper-slide .slide_con a {
+  display: block;
+  width: 60vw;
+  height: 6vw;
+  line-height: 6vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#headlines .newsbox .swiper-container_news .swiper-slide .slide_con a span {
+  color: #e60a1f;
+  border: 0.26666667vw solid #e60a1f;
+  border-radius: 0.66666667vw;
+  margin-right: 0.66666667vw;
+}
+#commodity {
+  margin-top: 2.66666667vw;
+}
+#commodity ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 60vw;
+}
+#commodity ul li {
+  width: 50%;
+  height: 29.86666667vw;
+  position: relative;
+  background: #fff;
+}
+#commodity ul li .lititle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7.33333333vw;
+}
+#commodity ul li .lititle img {
+  height: 100%;
+  width: 100%;
+}
+#commodity ul li .samestyle {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+#commodity ul li .insets {
+  position: relative;
+}
+#commodity ul li .insets img {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+}
+#commodity ul li .insets p {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  text-indent: 2.66666667vw;
+  width: 100%;
+  line-height: 4vw;
+  color: #999999;
+}
+#commodity ul li .largerversion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#commodity ul li .largerversion img {
+  width: 82%;
+}
+#live {
+  margin-top: 8vw;
+  position: relative;
+}
+#live .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+#live .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+#live ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#live ul li {
+  width: 33.33333333vw;
+  height: 33.6vw;
+  position: relative;
+}
+#live ul li.item_01 {
+  width: 66.66666667vw;
+}
+#live ul li.item_01 .liveinfo {
+  position: absolute;
+  top: 24vw;
+  left: 3.33333333vw;
+  height: 8.53333333vw;
+  width: 40vw;
+}
+#live ul li.item_01 .liveinfo p {
+  line-height: 4.26666667vw;
+}
+#live ul li.item_01 .liveinfo .pcor_01 {
+  color: #fff;
+}
+#live ul li.item_01 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+#live ul li.item_02 .liveinfo {
+  position: absolute;
+  top: 24vw;
+  left: 3.33333333vw;
+  height: 8.53333333vw;
+  width: 20vw;
+}
+#live ul li.item_02 .liveinfo p {
+  line-height: 4.26666667vw;
+}
+#live ul li.item_02 .liveinfo .pcor_01 {
+  color: #fff;
+}
+#live ul li.item_02 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+#live ul li .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#live ul li .bg p {
+  line-height: 4.26666667vw;
+}
+#live ul li .bg .pcor_01 {
+  color: #fff;
+}
+#live ul li .bg .pcor_02 {
+  color: #CBC5C0;
+}
+#live ul li .newlive {
+  position: absolute;
+  top: 29.6vw;
+  left: 0;
+  height: 4vw;
+  width: 8.53333333vw;
+}
+#live ul li .newlive p {
+  line-height: 4.26666667vw;
+}
+#live ul li .newlive .pcor_01 {
+  color: #fff;
+}
+#live ul li .newlive .pcor_02 {
+  color: #CBC5C0;
+}
+#live ul li .redhearts {
+  position: absolute;
+  top: 25.33333333vw;
+  left: 58vw;
+  height: 5.6vw;
+  width: 5.6vw;
+}
+#live ul li .redhearts p {
+  line-height: 4.26666667vw;
+}
+#live ul li .redhearts .pcor_01 {
+  color: #fff;
+}
+#live ul li .redhearts .pcor_02 {
+  color: #CBC5C0;
+}
+#live .textviewboxs {
+  height: 26vw;
+  background: #fff;
+}
+#live .textviewboxs .textview {
+  width: 33.33333333vw;
+  height: 15.33333333vw;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#live .textviewboxs .textview p {
+  text-indent: 2.66666667vw;
+  width: 100%;
+  line-height: 4.66666667vw;
+}
+#live .textviewboxs .textview p.chcor_b {
+  color: #333333;
+}
+#live .textviewboxs .textview p.chcor_g {
+  color: #CBC5C0;
+}
+#live .textviewboxs .recommend {
+  height: 4.26666667vw;
+  width: 94.93333333vw;
+  float: left;
+  padding: 2.13333333vw;
+}
+#live .textviewboxs .recommend p {
+  line-height: 4.26666667vw;
+}
+#live .textviewboxs .recommend p.bor {
+  border: 0.26666667vw solid #FD1E57;
+  float: left;
+  margin-right: 2vw;
+  color: #FD1E57;
+  border-radius: 0.8vw;
+}
+#live .textviewboxs .recommend p.rec_con {
+  float: left;
+}
+#live .textviewboxs .recommend p.rec_link {
+  float: right;
+}
+.samemodule {
+  margin-top: 8vw;
+}
+.samemodule .topcon {
+  height: 33.6vw;
+  display: flex;
+  position: relative;
+}
+.samemodule .topcon .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+.samemodule .topcon .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+.samemodule .topcon .ification {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+}
+.samemodule .topcon .ification img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.samemodule .topcon .ification p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7.2vw;
+  width: 100%;
+  line-height: 7.2vw;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.4);
+  text-indent: 3.33333333vw;
+}
+.samemodule .topcon .samelbox {
+  width: 66.66666667vw;
+  height: 100%;
+  position: relative;
+}
+.samemodule .topcon .samelbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.samemodule .topcon .samerbox {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+.samemodule .topcon .samerbox .samerimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.samemodule .topcon .samerbox .textbg {
+  position: absolute;
+  bottom: 2.66666667vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5.06666667vw;
+  width: 24vw;
+  line-height: 5.06666667vw;
+  text-align: center;
+  color: #fff;
+}
+.samemodule .topcon .samerbox .textbg.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+.samemodule .topcon .samerbox .textbg.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+.samemodule .topcon .samerbox .textbg.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+.samemodule .topcon .samerbox .textbg.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+.samemodule .topcon .samerbox .textbg.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+.samemodule .topcon .samerbox .textbg.textbg_same {
+  background-size: 100% 100%;
+}
+.samemodule .topcon .samerbox .brand {
+  margin-top: 0.66666667vw;
+  line-height: 5.2vw;
+  text-indent: 3.33333333vw;
+}
+.samemodule .topcon .samerbox .countries {
+  line-height: 3.46666667vw;
+  background: url(../picture/buy/JP.png) no-repeat 2.66666667vw 0;
+  background-size: 3.2vw 3.2vw;
+  text-indent: 6vw;
+}
+.samemodule .topcon .samerbox .brandclothes {
+  height: 24.26666667vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.samemodule .topcon .samerbox .brandclothes img {
+  height: 18.66666667vw;
+  width: 30.66666667vw;
+}
+.samemodule ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.samemodule ul li {
+  height: 32.66666667vw;
+  width: 50%;
+  background: #fff;
+  float: left;
+}
+.samemodule ul li .same {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+.samemodule ul li .font {
+  height: 14vw;
+  flex-wrap: wrap;
+}
+.samemodule ul li .font p {
+  width: 100%;
+  height: 4.66666667vw;
+  line-height: 4.8vw;
+  text-indent: 2vw;
+}
+.samemodule ul li .font p.pcon {
+  color: #999999;
+}
+.samemodule ul li .font p.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samemodule ul li .font p.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samemodule ul li .font p.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 14vw 0.53333333vw;
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.samemodule ul li .font p.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samemodule ul li .font p.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+.samemodule ul li .font p.fcor_same {
+  background-size: 9.33333333vw 3.73333333vw;
+}
+.samemodule ul li .img {
+  height: 18.66666667vw;
+  justify-content: space-around;
+}
+.samemodule ul li .img img {
+  height: 16.53333333vw;
+  width: 16.53333333vw;
+}
+#linlayout {
+  margin-top: 2.66666667vw;
+}
+#linlayout .framviewboxs {
+  display: flex;
+  justify-content: space-between;
+}
+#linlayout .framviewboxs .framview {
+  height: 32.93333333vw;
+  width: 24.53333333vw;
+  background: #fff;
+}
+#linlayout .framviewboxs .framview .top {
+  height: 13.33333333vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#linlayout .framviewboxs .framview .top p {
+  line-height: 4.66666667vw;
+  text-indent: 2vw;
+  width: 100%;
+}
+#linlayout .framviewboxs .framview .top p.small {
+  color: #999999;
+}
+#linlayout .framviewboxs .framview .bottom {
+  height: 19.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#linlayout .framviewboxs .framview .bottom img {
+  height: 18vw;
+  width: 18vw;
+}
+#linlayout .imageviewboxs {
+  overflow: hidden;
+}
+#linlayout .imageviewboxs .imageview {
+  height: 32.66666667vw;
+  width: 50%;
+  background: #fff;
+  float: left;
+}
+#linlayout .imageviewboxs .imageview .same {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+#linlayout .imageviewboxs .imageview .font {
+  height: 14vw;
+  flex-wrap: wrap;
+}
+#linlayout .imageviewboxs .imageview .font p {
+  width: 100%;
+  height: 4.66666667vw;
+  line-height: 4.8vw;
+  text-indent: 2vw;
+}
+#linlayout .imageviewboxs .imageview .font p.pcon {
+  color: #999999;
+}
+#linlayout .imageviewboxs .imageview .font p.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+#linlayout .imageviewboxs .imageview .font p.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+#linlayout .imageviewboxs .imageview .font p.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 14vw 0.53333333vw;
+  background-size: 9.33333333vw 3.73333333vw;
+}
+#linlayout .imageviewboxs .imageview .font p.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+#linlayout .imageviewboxs .imageview .font p.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 17.33333333vw 0.53333333vw;
+}
+#linlayout .imageviewboxs .imageview .font p.fcor_same {
+  background-size: 9.33333333vw 3.73333333vw;
+}
+#linlayout .imageviewboxs .imageview .img {
+  height: 18.66666667vw;
+  justify-content: space-around;
+}
+#linlayout .imageviewboxs .imageview .img img {
+  height: 16.53333333vw;
+  width: 16.53333333vw;
+}
+#linlayout .bottominfo {
+  height: 9.6vw;
+  background: #fff;
+}
+#linlayout .bottominfo a {
+  display: block;
+  height: 4.8vw;
+  padding: 0 2vw;
+  text-align: center;
+  line-height: 4.8vw;
+  color: #5B5B5B;
+  margin: 2.4vw 1.33333333vw 0 0;
+}
+#linlayout .bottominfo a.auction {
+  margin-left: 2.66666667vw;
+}
+#linlayout .bottominfo a.auc_same {
+  border-radius: 2.66666667vw;
+  border: 0.13333333vw solid #C3C3C3;
+  float: left;
+}
+#linlayout .bottominfo a.omit {
+  float: left;
+  line-height: 3.33333333vw;
+}
+#linlayout .bottominfo a.server {
+  float: right;
+}
+#life {
+  margin-top: 8vw;
+}
+#life .topcon {
+  height: 33.6vw;
+  display: flex;
+  position: relative;
+}
+#life .topcon .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+#life .topcon .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+#life .topcon .ification {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+}
+#life .topcon .ification img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#life .topcon .ification p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7.2vw;
+  width: 100%;
+  line-height: 7.2vw;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.4);
+  text-indent: 3.33333333vw;
+}
+#life .topcon .samelbox {
+  width: 66.66666667vw;
+  height: 100%;
+  position: relative;
+}
+#life .topcon .samelbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#life .topcon .samerbox {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+#life .topcon .samerbox .samerimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#life .topcon .samerbox .textbg {
+  position: absolute;
+  bottom: 2.66666667vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5.06666667vw;
+  width: 24vw;
+  line-height: 5.06666667vw;
+  text-align: center;
+  color: #fff;
+}
+#life .topcon .samerbox .textbg.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+#life .topcon .samerbox .textbg.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+#life .topcon .samerbox .textbg.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+#life .topcon .samerbox .textbg.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+#life .topcon .samerbox .textbg.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+#life .topcon .samerbox .textbg.textbg_same {
+  background-size: 100% 100%;
+}
+#life .topcon .samerbox .brand {
+  margin-top: 0.66666667vw;
+  line-height: 5.2vw;
+  text-indent: 3.33333333vw;
+}
+#life .topcon .samerbox .countries {
+  line-height: 3.46666667vw;
+  background: url(../picture/buy/JP.png) no-repeat 2.66666667vw 0;
+  background-size: 3.2vw 3.2vw;
+  text-indent: 6vw;
+}
+#life .topcon .samerbox .brandclothes {
+  height: 24.26666667vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#life .topcon .samerbox .brandclothes img {
+  height: 18.66666667vw;
+  width: 30.66666667vw;
+}
+#life .viewboxs {
+  overflow: hidden;
+}
+#life .viewboxs .framview {
+  height: 32.93333333vw;
+  width: 33.33333333vw;
+  background: #fff;
+  float: left;
+}
+#life .viewboxs .framview .top {
+  height: 13.33333333vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#life .viewboxs .framview .top p {
+  line-height: 4.66666667vw;
+  text-indent: 2vw;
+  width: 100%;
+}
+#life .viewboxs .framview .top p.small {
+  color: #999999;
+}
+#life .viewboxs .framview .bottom {
+  height: 19.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#life .viewboxs .framview .bottom img {
+  height: 18.66666667vw;
+  width: 18.66666667vw;
+}
+#goodshops {
+  margin-top: 8vw;
+}
+#goodshops .topcon {
+  height: 33.6vw;
+  display: flex;
+  position: relative;
+}
+#goodshops .topcon .sametitle {
+  position: absolute;
+  top: -4.13333333vw;
+  left: 0;
+  height: 8.26666667vw;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+#goodshops .topcon .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+#goodshops .topcon .ification {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+}
+#goodshops .topcon .ification img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#goodshops .topcon .ification p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7.2vw;
+  width: 100%;
+  line-height: 7.2vw;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.4);
+  text-indent: 3.33333333vw;
+}
+#goodshops .topcon .samelbox {
+  width: 66.66666667vw;
+  height: 100%;
+  position: relative;
+}
+#goodshops .topcon .samelbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#goodshops .topcon .samerbox {
+  width: 33.33333333vw;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+#goodshops .topcon .samerbox .samerimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#goodshops .topcon .samerbox .textbg {
+  position: absolute;
+  bottom: 2.66666667vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5.06666667vw;
+  width: 24vw;
+  line-height: 5.06666667vw;
+  text-align: center;
+  color: #fff;
+}
+#goodshops .topcon .samerbox .textbg.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+#goodshops .topcon .samerbox .textbg.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+#goodshops .topcon .samerbox .textbg.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+#goodshops .topcon .samerbox .textbg.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+#goodshops .topcon .samerbox .textbg.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+#goodshops .topcon .samerbox .textbg.textbg_same {
+  background-size: 100% 100%;
+}
+#goodshops .topcon .samerbox .brand {
+  margin-top: 0.66666667vw;
+  line-height: 5.2vw;
+  text-indent: 3.33333333vw;
+}
+#goodshops .topcon .samerbox .countries {
+  line-height: 3.46666667vw;
+  background: url(../picture/buy/JP.png) no-repeat 2.66666667vw 0;
+  background-size: 3.2vw 3.2vw;
+  text-indent: 6vw;
+}
+#goodshops .topcon .samerbox .brandclothes {
+  height: 24.26666667vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#goodshops .topcon .samerbox .brandclothes img {
+  height: 18.66666667vw;
+  width: 30.66666667vw;
+}
+#goodshops ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #fff;
+}
+#goodshops ul li {
+  height: 41.33333333vw;
+  width: 50vw;
+}
+#goodshops ul li p {
+  line-height: 8.53333333vw;
+}
+#goodshops ul li p .strong {
+  margin-left: 3.33333333vw;
+  color: #333333;
+}
+#goodshops ul li p .span {
+  margin-left: 1.33333333vw;
+  color: #999999;
+}
+#goodshops ul li .dview {
+  height: 32.8vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#goodshops ul li .dview .ldview {
+  height: 29.6vw;
+  width: 29.6vw;
+  margin-right: 0.66666667vw;
+}
+#goodshops ul li .dview .ldview img {
+  width: 100%;
+  height: 100%;
+}
+#goodshops ul li .dview .rdview {
+  height: 29.6vw;
+  width: 14.8vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+#goodshops ul li .dview .rdview img {
+  width: 100%;
+  height: 49%;
+}
+#guesslike {
+  margin-top: 4vw;
+}
+#guesslike .guesstitle {
+  height: 9.33333333vw;
+  width: 100%;
+  line-height: 9.33333333vw;
+  text-align: center;
+  background: #fff;
+  color: #FF5000;
+}
+#guesslike .guesscon {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 361.33333333vw;
+}
+#guesslike .guesscon .guessseparate {
+  height: 70.66666667vw;
+  width: 49%;
+  background: #fff;
+}
+#guesslike .guesscon .guessseparate .img {
+  height: 49.2vw;
+}
+#guesslike .guesscon .guessseparate .img img {
+  height: 100%;
+  width: 100%;
+}
+#guesslike .guesscon .guessseparate .describe {
+  height: 21.46666667vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+#guesslike .guesscon .guessseparate .describe p {
+  width: 43.86666667vw;
+}
+#guesslike .guesscon .guessseparate .describe p.descon {
+  height: 8.93333333vw;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#guesslike .guesscon .guessseparate .describe p.desinfo {
+  height: 6.13333333vw;
+  line-height: 6.13333333vw;
+}
+#guesslike .guesscon .guessseparate .describe p.desinfo .price {
+  float: left;
+  color: #FF5000;
+}
+#guesslike .guesscon .guessseparate .describe p.desinfo .pay {
+  float: right;
+  color: #999999;
+}
+#footer {
+  margin-top: 5.33333333vw;
+  margin-bottom: 12.8vw;
+  height: 26.66666667vw;
+  background: #4E525E;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+#footer .funboxs {
+  height: 10.66666667vw;
+  width: 95.2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer .funboxs a {
+  display: block;
+  height: 9.33333333vw;
+  padding: 0 4.53333333vw;
+  text-align: center;
+  line-height: 9.33333333vw;
+  border-radius: 0.8vw;
+  color: #c3c6ca;
+  background: #555965;
+  border: 0.13333333vw solid #42454d;
+}
+#footer p {
+  height: 5.33333333vw;
+  line-height: 5.33333333vw;
+  text-align: center;
+  color: #c3c6ca;
+}
+#taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 12.66666667vw;
+  background: #fff;
+}
+#taskbar div {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  float: left;
+}
+#taskbar div span {
+  display: block;
+  width: 13.33333333vw;
+  height: 6.66666667vw;
+  text-align: center;
+  line-height: 6.66666667vw;
+}
+#taskbar div p {
+  width: 12.8vw;
+  height: 4.26666667vw;
+  text-align: center;
+  line-height: 4.26666667vw;
+}
+#returntop {
+  position: fixed;
+  bottom: 21.33333333vw;
+  right: 4vw;
+  height: 26.66666667vw;
+  width: 11.73333333vw;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 100;
+  align-content: space-between;
+}
+#returntop div {
+  width: 11.73333333vw;
+  height: 11.73333333vw;
+  border-radius: 50%;
+  text-align: center;
+}
+#returntop div.tbicon {
+  background: url(../picture/guess/taobao.png) no-repeat;
+  background-size: 100% 100%;
+}
+#returntop div.totop {
+  background: #fff;
+  padding-top: 0.66666667vw;
+  height: 11.06666667vw;
+  color: #B1B1B1;
+}
+#returntop div.totop i {
+  display: block;
+}

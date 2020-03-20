@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+#topnav {
+  width: 100%;
+  height: 40px;
+  background: #DAE3E8;
+  border-bottom: 3px solid #778592;
+}
+#topnav .nav {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+#topnav .nav a {
+  display: block;
+  height: 100%;
+  width: 200px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  color: #778592;
+}
+#topnav .nav a:hover {
+  background: #FFCC66;
+}
+#personal {
+  width: 100%;
+  background: #F5F5F5;
+}
+#personal .per_con {
+  height: 240px;
+  width: 1226px;
+  margin: 0 auto;
+}
+#personal .per_con .headpic {
+  height: 180px;
+  width: 180px;
+  float: left;
+  margin-top: 30px;
+  border-radius: 50%;
+  background: url(../img/profile.png);
+}
+#personal .per_con .headpic:hover {
+  background: url(../img/profile2.png);
+  cursor: pointer;
+}
+#personal .per_con .per_conl {
+  height: 96px;
+  width: 234px;
+  margin: 72px 0 0 40px;
+  float: left;
+}
+#personal .per_con .per_conl p {
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #49515c;
+}
+#personal .per_con .per_conl .icon_box {
+  height: 38px;
+  margin: 17px 0;
+}
+#personal .per_con .per_conl .icon_box a {
+  display: block;
+  height: auto;
+  width: auto;
+  float: left;
+  margin-right: 5px;
+}
+#personal .per_con .per_conr {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background: #00CC66;
+  float: right;
+  margin-top: 100px;
+}
+#personal .per_con .per_conr:hover {
+  background: #FFCC66;
+  cursor: pointer;
+}
+#main {
+  width: 100%;
+  padding: 1px 0;
+  background: #DAE3E8;
+}
+#main .main_conbox {
+  height: 495px;
+  width: 1000px;
+  margin: 20px auto;
+}
+#main .main_conbox .main_conl {
+  width: 700px;
+  height: 455px;
+  float: left;
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#main .main_conbox .main_conl::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 5px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+}
+#main .main_conbox .main_conl::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ccc;
+}
+#main .main_conbox .main_conl::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #DAE3E8;
+}
+#main .main_conbox .main_conl .con_same h1 {
+  margin: 20px 0;
+}
+#main .main_conbox .main_conl .con_same p {
+  height: 42px;
+  line-height: 21px;
+  margin: 16px 0;
+}
+#main .main_conbox .main_conl .con_same img {
+  width: 700px;
+  height: 292px;
+}
+#main .main_conbox .main_conr {
+  width: 200px;
+  height: 440px;
+  float: right;
+  background: #fff;
+  padding: 20px;
+  color: #49515C;
+}
+#main .main_conbox .main_conr h1 {
+  margin: 20px 0;
+}
+#main .main_conbox .main_conr p {
+  font-size: 14px;
+  line-height: 26px;
+}
+#main .main_conbox .main_conr img {
+  width: 180px;
+  height: 135px;
+}
+#footer {
+  height: 138px;
+  padding: 1px 0;
+  width: 100%;
+  background: #F5F5F5;
+}
+#footer p {
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #49515C;
+  width: 500px;
+  margin: 30px auto;
+}

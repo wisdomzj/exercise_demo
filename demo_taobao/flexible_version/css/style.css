@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 10rem;
+  width: 10rem;
+  background: #F4F4F4;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../css/font/iconfont.eot');
+  src: url('../css/font/iconfont.eot?#iefix') format('embedded-opentype'), url('../css/font/iconfont.woff') format('woff'), url('../css/font/iconfont.ttf') format('truetype'), url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+[data-dpr="1"] .dpr2size-24 {
+  font-size: 12px;
+}
+[data-dpr="1"] .dpr2size-26 {
+  font-size: 13px;
+}
+[data-dpr="1"] .dpr2size-28 {
+  font-size: 14px;
+}
+[data-dpr="1"] .dpr2size-30 {
+  font-size: 15px;
+}
+[data-dpr="1"] .dpr2size-40 {
+  font-size: 20px;
+}
+[data-dpr="2"] .dpr2size-24 {
+  font-size: 24px;
+}
+[data-dpr="2"] .dpr2size-26 {
+  font-size: 26px;
+}
+[data-dpr="2"] .dpr2size-28 {
+  font-size: 28px;
+}
+[data-dpr="2"] .dpr2size-30 {
+  font-size: 30px;
+}
+[data-dpr="2"] .dpr2size-40 {
+  font-size: 40px;
+}
+[data-dpr="3"] .dpr2size-24 {
+  font-size: 36px;
+}
+[data-dpr="3"] .dpr2size-26 {
+  font-size: 39px;
+}
+[data-dpr="3"] .dpr2size-28 {
+  font-size: 42px;
+}
+[data-dpr="3"] .dpr2size-30 {
+  font-size: 45px;
+}
+[data-dpr="3"] .dpr2size-40 {
+  font-size: 60px;
+}
+[data-dpr="4"] .dpr2size-24 {
+  font-size: 48px;
+}
+[data-dpr="4"] .dpr2size-26 {
+  font-size: 52px;
+}
+[data-dpr="4"] .dpr2size-28 {
+  font-size: 56px;
+}
+[data-dpr="4"] .dpr2size-30 {
+  font-size: 60px;
+}
+[data-dpr="4"] .dpr2size-40 {
+  font-size: 80px;
+}
+.titlebgstyle .sametitle {
+  position: absolute;
+  top: -0.41333333rem;
+  left: 0;
+  height: 0.82666667rem;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+.titlebgstyle .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+.textbgstyle.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+.textbgstyle.textbg_same {
+  background-size: 100% 100%;
+}
+.changetxetcolor.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.changetxetcolor.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.changetxetcolor.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 1.4rem 0.05333333rem;
+  background-size: 0.93333333rem 0.37333333rem;
+}
+.changetxetcolor.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.changetxetcolor.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.changetxetcolor.fcor_same {
+  background-size: 0.93333333rem 0.37333333rem;
+}
+.slidebgstyle.slide_01 {
+  background: url(../picture/headlines/slidebg_01.jpeg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle.slide_02 {
+  background: url(../picture/headlines/slidebg_02.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle.slide_03 {
+  background: url(../picture/headlines/slidebg_03.jpg) no-repeat right center;
+  background-size: auto 100%;
+}
+.slidebgstyle .slide_con {
+  height: 100%;
+  background: url(../picture/headlines/whitebg.png) no-repeat 6rem center;
+  background-size: auto 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+.slidebgstyle .slide_con a {
+  display: block;
+  width: 6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slidebgstyle .slide_con a span {
+  color: #e60a1f;
+  border: 0.02666667rem solid #e60a1f;
+  border-radius: 0.06666667rem;
+  margin-right: 0.06666667rem;
+}
+.livelistyle.item_01 {
+  width: 6.66666667rem;
+}
+.livelistyle.item_01 .liveinfo {
+  position: absolute;
+  top: 2.4rem;
+  left: 0.33333333rem;
+  height: 0.85333333rem;
+  width: 4rem;
+}
+.livelistyle.item_01 .liveinfo p {
+  line-height: 0.42666667rem;
+}
+.livelistyle.item_01 .liveinfo .pcor_01 {
+  color: #fff;
+}
+.livelistyle.item_01 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle.item_02 .liveinfo {
+  position: absolute;
+  top: 2.4rem;
+  left: 0.33333333rem;
+  height: 0.85333333rem;
+  width: 2rem;
+}
+.livelistyle.item_02 .liveinfo p {
+  line-height: 0.42666667rem;
+}
+.livelistyle.item_02 .liveinfo .pcor_01 {
+  color: #fff;
+}
+.livelistyle.item_02 .liveinfo .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.livelistyle .bg p {
+  line-height: 0.42666667rem;
+}
+.livelistyle .bg .pcor_01 {
+  color: #fff;
+}
+.livelistyle .bg .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .newlive {
+  position: absolute;
+  top: 2.96rem;
+  left: 0;
+  height: 0.4rem;
+  width: 0.85333333rem;
+}
+.livelistyle .newlive p {
+  line-height: 0.42666667rem;
+}
+.livelistyle .newlive .pcor_01 {
+  color: #fff;
+}
+.livelistyle .newlive .pcor_02 {
+  color: #CBC5C0;
+}
+.livelistyle .redhearts {
+  position: absolute;
+  top: 2.53333333rem;
+  left: 5.8rem;
+  height: 0.56rem;
+  width: 0.56rem;
+}
+.livelistyle .redhearts p {
+  line-height: 0.42666667rem;
+}
+.livelistyle .redhearts .pcor_01 {
+  color: #fff;
+}
+.livelistyle .redhearts .pcor_02 {
+  color: #CBC5C0;
+}
+.sametopconstyle {
+  margin-top: 0.8rem;
+}
+.sametopconstyle .topcon {
+  height: 3.36rem;
+  display: flex;
+  position: relative;
+}
+.sametopconstyle .topcon .sametitle {
+  position: absolute;
+  top: -0.41333333rem;
+  left: 0;
+  height: 0.82666667rem;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: 77;
+}
+.sametopconstyle .topcon .sametitle img {
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .ification {
+  width: 3.33333333rem;
+  height: 100%;
+  position: relative;
+}
+.sametopconstyle .topcon .ification img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .ification p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.72rem;
+  width: 100%;
+  line-height: 0.72rem;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.4);
+  text-indent: 0.33333333rem;
+}
+.sametopconstyle .topcon .samelbox {
+  width: 6.66666667rem;
+  height: 100%;
+  position: relative;
+}
+.sametopconstyle .topcon .samelbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .samerbox {
+  width: 3.33333333rem;
+  height: 100%;
+  position: relative;
+  background: #fff;
+}
+.sametopconstyle .topcon .samerbox .samerimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sametopconstyle .topcon .samerbox .textbg {
+  position: absolute;
+  bottom: 0.26666667rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.50666667rem;
+  width: 2.4rem;
+  line-height: 0.50666667rem;
+  text-align: center;
+  color: #fff;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_01 {
+  background: url(../picture/found/foundtextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_02 {
+  background: url(../picture/coldplay/coldplaytextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_03 {
+  background: url(../picture/affordable/affordabletextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_04 {
+  background: url(../picture/fashion/fashiontextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_05 {
+  background: url(../picture/goodshops/goodshopstextbg.jpg) no-repeat;
+}
+.sametopconstyle .topcon .samerbox .textbg.textbg_same {
+  background-size: 100% 100%;
+}
+.sametopconstyle .topcon .samerbox .brand {
+  margin-top: 0.06666667rem;
+  line-height: 0.52rem;
+  text-indent: 0.33333333rem;
+}
+.sametopconstyle .topcon .samerbox .countries {
+  line-height: 0.34666667rem;
+  background: url(../picture/buy/JP.png) no-repeat 0.26666667rem 0;
+  background-size: 0.32rem 0.32rem;
+  text-indent: 0.6rem;
+}
+.sametopconstyle .topcon .samerbox .brandclothes {
+  height: 2.42666667rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sametopconstyle .topcon .samerbox .brandclothes img {
+  height: 1.86666667rem;
+  width: 3.06666667rem;
+}
+.samelistyle {
+  height: 3.26666667rem;
+  width: 50%;
+  background: #fff;
+  float: left;
+}
+.samelistyle .same {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+.samelistyle .font {
+  height: 1.4rem;
+  flex-wrap: wrap;
+}
+.samelistyle .font p {
+  width: 100%;
+  height: 0.46666667rem;
+  line-height: 0.48rem;
+  text-indent: 0.2rem;
+}
+.samelistyle .font p.pcon {
+  color: #999999;
+}
+.samelistyle .font p.fcor_blue {
+  color: #973DFF;
+  background: url(../picture/buy/buyicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.samelistyle .font p.fcor_yellow {
+  color: #FEBF0E;
+  background: url(../picture/found/foundicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.samelistyle .font p.fcor_yellow.near {
+  background: url(../picture/found/foundicon.jpg) no-repeat 1.4rem 0.05333333rem;
+  background-size: 0.93333333rem 0.37333333rem;
+}
+.samelistyle .font p.fcor_orange {
+  color: #FE3509;
+  background: url(../picture/affordable/affordableicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.samelistyle .font p.fcor_red {
+  color: #FF3779;
+  background: url(../picture/fashion/fashionicon.jpg) no-repeat 1.73333333rem 0.05333333rem;
+}
+.samelistyle .font p.fcor_same {
+  background-size: 0.93333333rem 0.37333333rem;
+}
+.samelistyle .img {
+  height: 1.86666667rem;
+  justify-content: space-around;
+}
+.samelistyle .img img {
+  height: 1.65333333rem;
+  width: 1.65333333rem;
+}
+.samelpstyle_same {
+  position: absolute;
+  bottom: 0.33333333rem;
+  left: 0.26666667rem;
+  color: #fff;
+  line-height: 0.45333333rem;
+  width: 5.25333333rem;
+}
+.samelpstyle_01 {
+  height: 0.45333333rem;
+}
+.samelpstyle_02 {
+  height: 0.90666667rem;
+}

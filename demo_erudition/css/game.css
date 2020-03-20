@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  height: 58px;
+  width: 100%;
+  background: #191D3A;
+}
+#header .nav_box {
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+#header .nav_box .logo {
+  height: 57px;
+  width: 225px;
+  float: left;
+  padding-top: 1px;
+}
+#header .nav_box .logo a {
+  display: block;
+  height: 35px;
+  width: 157px;
+  margin: 9px 0 0 20px;
+}
+#header .nav_box .logo a img {
+  height: 100%;
+  width: 100%;
+}
+#header .nav_box .nav {
+  height: 100%;
+  width: 650px;
+  float: left;
+}
+#header .nav_box .nav a {
+  display: block;
+  height: 100%;
+  width: 85px;
+  float: left;
+  text-align: center;
+  line-height: 58px;
+  color: #818496;
+  border-left: 1px solid #252947;
+  border-right: 1px solid #252947;
+  margin-right: -1px;
+  font-size: 14px;
+}
+#header .nav_box .nav a.index {
+  background-color: #252947;
+  color: #e2e4ed;
+}
+#header .nav_box .nav a.game {
+  background-color: #252947;
+  color: #e2e4ed;
+}
+#header .nav_box .nav a.join {
+  height: 34px;
+  width: 100px;
+  border-radius: 5px;
+  background: #38B774;
+  margin: 12px 0 0 10px;
+  line-height: 34px;
+  color: #fff;
+}
+#header .nav_box .nav a.join:hover {
+  background: #2BA364;
+  color: #fff;
+}
+#header .nav_box .nav a:hover {
+  color: #e2e4ed;
+}
+#header .nav_box .translate {
+  height: 100%;
+  width: 80px;
+  float: right;
+}
+#header .nav_box .translate a {
+  display: block;
+  height: 100%;
+  width: 40px;
+  text-align: center;
+  line-height: 58px;
+  float: left;
+  color: #444858;
+}
+#header .nav_box .translate a.chinese {
+  color: #38B774;
+}
+#header .nav_box .translate a.english:hover {
+  color: #38B774;
+}
+#footer {
+  width: 100%;
+  background: #191D3A;
+}
+#footer .botcen {
+  height: 152px;
+  width: 1000px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+#footer .botcen p.psty {
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  color: #6C6E7E;
+}
+#footer .botcen p.psty a.reca {
+  color: #6C6E7E;
+}
+#footer .botcen p.psty a.reca:hover {
+  color: #fff;
+}
+#footer .botcen p.psty a.fasty {
+  display: block;
+  height: 50px;
+  padding-right: 16px;
+  float: left;
+  line-height: 50px;
+  color: #6C6E7E;
+  position: relative;
+  cursor: pointer;
+}
+#footer .botcen p.psty a.fasty.bar:before {
+  position: absolute;
+  top: 19px;
+  right: 8px;
+  content: " ";
+  height: 12px;
+  width: 1px;
+  background: #6C6E7E;
+}
+#footer .botcen p.psty.bggov {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#footer .botcen p.psty.bggov img {
+  height: 50px;
+  width: 36px;
+  margin-left: 5px;
+}
+#black {
+  position: fixed;
+  right: 15px;
+  bottom: 75px;
+  width: 68px;
+  height: 29px;
+  background: url(../img/top.png) no-repeat 0 -40px;
+  z-index: 999;
+}
+#black:hover {
+  background: url(../img/top.png) no-repeat;
+}
+#gamebanner {
+  height: 254px;
+  width: 100%;
+  background: lightcoral;
+  position: relative;
+  overflow: hidden;
+}
+#gamebanner img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#area .main {
+  width: 1000px;
+  margin: 0 auto;
+}
+#area .main .mtit {
+  height: 29px;
+  padding: 25px 0 15px;
+  border-bottom: 1px solid #c7d6e5;
+}
+#area .main .mtit h2 {
+  height: 100%;
+  width: 870px;
+  background: url(../img/location.png) no-repeat 0 -100px;
+  background-position: 0 -94px;
+  padding-left: 30px;
+  font-size: 20px;
+  color: #444866;
+  line-height: 29px;
+  float: left;
+}
+#area .main .mtit .home {
+  float: left;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#area .main .mtit .home .homepage {
+  display: block;
+  height: 13px;
+  width: 15px;
+  background: url(../img/home.png) no-repeat;
+}
+#area .main .mtit .home .togame {
+  width: 4px;
+  height: 8px;
+  background: url(../img/icon.png) no-repeat 0 -150px;
+}
+#area .main .mtit .home span {
+  font-size: 12px;
+}
+#area .main .taboptions {
+  padding: 40px 0;
+}
+#area .main .taboptions .tabbox {
+  width: 100%;
+  overflow: hidden;
+}
+#area .main .taboptions .tabbox .tabnav {
+  float: left;
+  width: 195px;
+}
+#area .main .taboptions .tabbox .tabnav li {
+  height: 80px;
+  border-bottom: 1px solid #cad6e1;
+  cursor: pointer;
+}
+#area .main .taboptions .tabbox .tabnav li.addinstr {
+  background: url(../img/arrow.png) no-repeat center right;
+}
+#area .main .taboptions .tabbox .tabnav li div.font {
+  height: 100%;
+  width: 140px;
+  float: right;
+  line-height: 80px;
+  font-size: 16px;
+}
+#area .main .taboptions .tabbox .tabnav li div.font.chfontcor {
+  color: #38B774;
+}
+#area .main .taboptions .tabbox .tabnav li div.font:hover {
+  color: #38B774;
+}
+#area .main .taboptions .tabbox .tabnav li div.icon {
+  height: 40px;
+  width: 34px;
+  float: left;
+  margin-top: 20px;
+}
+#area .main .taboptions .tabbox .tabnav li div.icon.iph {
+  background: url(../img/pad.png) no-repeat;
+}
+#area .main .taboptions .tabbox .tabnav li div.icon.and {
+  background: url(../img/pad.png) no-repeat -4px -100px;
+}
+#area .main .taboptions .tabbox .tabnav li div.icon.ipa {
+  background: url(../img/pad.png) no-repeat 0 -200px;
+}
+#area .main .taboptions .tabbox .tabnav li div.icon.pc {
+  background: url(../img/pad.png) no-repeat 0 -300px;
+  height: 28px;
+  margin-top: 27px;
+}
+#area .main .taboptions .tabbox .tabnav li div.icon.tv {
+  background: url(../img/pad.png) no-repeat 0 -606px;
+  height: 24px;
+  margin-top: 28px;
+}
+#area .main .taboptions .tabbox .tabnav li:hover .icon.iph {
+  background: url(../img/pad.png) no-repeat -125px 0;
+}
+#area .main .taboptions .tabbox .tabnav li:hover .icon.and {
+  background: url(../img/pad.png) no-repeat -124px -100px;
+}
+#area .main .taboptions .tabbox .tabnav li:hover .icon.ipa {
+  background: url(../img/pad.png) no-repeat -121px -200px;
+}
+#area .main .taboptions .tabbox .tabnav li:hover .icon.pc {
+  background: url(../img/pad.png) no-repeat -120px -300px;
+}
+#area .main .taboptions .tabbox .tabnav li:hover .icon.tv {
+  background: url(../img/pad.png) no-repeat -43px -606px;
+}
+#area .main .taboptions .tabbox .tabcon {
+  float: right;
+  width: 757px;
+  position: relative;
+}
+#area .main .taboptions .tabbox .tabcon .listcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  display: none;
+  width: 800px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li {
+  float: left;
+  margin: 0 43px 42px 0;
+  width: 355px;
+  height: 327px;
+  border: 1px solid #cad6e1;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li:hover {
+  background: #fff;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li h3 {
+  height: 55px;
+  padding-top: 3px;
+  line-height: 55px;
+  font-weight: normal;
+  font-size: 16px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li h3 a {
+  text-decoration: none;
+  color: #444866;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li h3 a:hover {
+  color: #38B774;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li h3 a span {
+  padding-right: 1.166em;
+  font-size: 12px;
+  font-family: Arial;
+  color: #38b774;
+  background: url(../img/arrow.png) no-repeat right center;
+  text-transform: uppercase;
+  margin-left: 4px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gameimg {
+  width: 331px;
+  height: 195px;
+  margin: 0 auto 20px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gameimg img {
+  height: 100%;
+  width: 100%;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink {
+  width: 331px;
+  height: 36px;
+  margin: 0 auto;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink.clientdown {
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #191D3A;
+  background: url(../img/download-icon.png) no-repeat;
+  background-position: 220px 5px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink.onlinegame {
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #191D3A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink.onlinegame span {
+  margin-right: 10px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink.onlinegame a.alinks {
+  display: block;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink.onlinegame a.alinks.facelink {
+  background: url(../img/online.png) no-repeat 0 -48px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink.onlinegame a.alinks.happylink {
+  background: url(../img/online.png) no-repeat -26px -48px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink.onlinegame a.alinks.weibolink {
+  background: url(../img/online.png) no-repeat -51px -48px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore {
+  width: 165px;
+  border-right: 1px solid #C7D6E5;
+  height: 36px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore .appleicon {
+  height: 28px;
+  width: 22px;
+  background: url(../img/icon.png) no-repeat 0 -350px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore .qrcode {
+  height: 30px;
+  width: 30px;
+  background: url(../img/icon.png) no-repeat 0 -450px;
+  position: relative;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore .qrcode .code {
+  position: absolute;
+  background: url(../img/ewmbg.png) no-repeat;
+  padding-top: 10px;
+  width: 146px;
+  height: 142px;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  display: none;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore .andicon {
+  height: 32px;
+  width: 24px;
+  background: url(../img/icon.png) no-repeat 0 -550px;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore .afont {
+  display: block;
+  height: 32px;
+  width: 100px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore.qrcodedown {
+  border: none;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore.qrcodedown:hover .afont {
+  color: #2EBB6F;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore.qrcodedown:hover .code {
+  display: block;
+}
+#area .main .taboptions .tabbox .tabcon .listcon ul li .gamelink .appstore.store:hover .afont {
+  color: #2EBB6F;
+}

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  height: 58px;
+  width: 100%;
+  background: #191D3A;
+}
+#header .nav_box {
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+#header .nav_box .logo {
+  height: 57px;
+  width: 225px;
+  float: left;
+  padding-top: 1px;
+}
+#header .nav_box .logo a {
+  display: block;
+  height: 35px;
+  width: 157px;
+  margin: 9px 0 0 20px;
+}
+#header .nav_box .logo a img {
+  height: 100%;
+  width: 100%;
+}
+#header .nav_box .nav {
+  height: 100%;
+  width: 650px;
+  float: left;
+}
+#header .nav_box .nav a {
+  display: block;
+  height: 100%;
+  width: 85px;
+  float: left;
+  text-align: center;
+  line-height: 58px;
+  color: #818496;
+  border-left: 1px solid #252947;
+  border-right: 1px solid #252947;
+  margin-right: -1px;
+  font-size: 14px;
+}
+#header .nav_box .nav a.index {
+  background-color: #252947;
+  color: #e2e4ed;
+}
+#header .nav_box .nav a.game {
+  background-color: #252947;
+  color: #e2e4ed;
+}
+#header .nav_box .nav a.join {
+  height: 34px;
+  width: 100px;
+  border-radius: 5px;
+  background: #38B774;
+  margin: 12px 0 0 10px;
+  line-height: 34px;
+  color: #fff;
+}
+#header .nav_box .nav a.join:hover {
+  background: #2BA364;
+  color: #fff;
+}
+#header .nav_box .nav a:hover {
+  color: #e2e4ed;
+}
+#header .nav_box .translate {
+  height: 100%;
+  width: 80px;
+  float: right;
+}
+#header .nav_box .translate a {
+  display: block;
+  height: 100%;
+  width: 40px;
+  text-align: center;
+  line-height: 58px;
+  float: left;
+  color: #444858;
+}
+#header .nav_box .translate a.chinese {
+  color: #38B774;
+}
+#header .nav_box .translate a.english:hover {
+  color: #38B774;
+}
+#footer {
+  width: 100%;
+  background: #191D3A;
+}
+#footer .botcen {
+  height: 152px;
+  width: 1000px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+#footer .botcen p.psty {
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  color: #6C6E7E;
+}
+#footer .botcen p.psty a.reca {
+  color: #6C6E7E;
+}
+#footer .botcen p.psty a.reca:hover {
+  color: #fff;
+}
+#footer .botcen p.psty a.fasty {
+  display: block;
+  height: 50px;
+  padding-right: 16px;
+  float: left;
+  line-height: 50px;
+  color: #6C6E7E;
+  position: relative;
+  cursor: pointer;
+}
+#footer .botcen p.psty a.fasty.bar:before {
+  position: absolute;
+  top: 19px;
+  right: 8px;
+  content: " ";
+  height: 12px;
+  width: 1px;
+  background: #6C6E7E;
+}
+#footer .botcen p.psty.bggov {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#footer .botcen p.psty.bggov img {
+  height: 50px;
+  width: 36px;
+  margin-left: 5px;
+}
+#black {
+  position: fixed;
+  right: 15px;
+  bottom: 75px;
+  width: 68px;
+  height: 29px;
+  background: url(../img/top.png) no-repeat 0 -40px;
+  z-index: 999;
+}
+#black:hover {
+  background: url(../img/top.png) no-repeat;
+}

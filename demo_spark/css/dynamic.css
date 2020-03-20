@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: url(../img/bg_cloud.png) no-repeat;
+  background-size: cover cover;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+#top {
+  width: 100%;
+}
+#top .topcon {
+  width: 1200px;
+  margin: 0 auto;
+  background: url(../img/bg_house.png) no-repeat center top;
+}
+#top .topcon .toplink {
+  height: 38px;
+}
+#top .topcon .toplink a {
+  display: block;
+  float: right;
+  height: 38px;
+  padding: 0 15px;
+  line-height: 38px;
+  color: #fff;
+  position: relative;
+  font-size: 12px;
+}
+#top .topcon .toplink a .bar {
+  display: block;
+  height: 11px;
+  width: 1px;
+  background: #fff;
+  position: absolute;
+  top: 13px;
+  right: 0px;
+}
+#top .topcon .search {
+  height: 62px;
+  position: relative;
+}
+#top .topcon .search .website_icon {
+  display: block;
+  height: 62px;
+  width: 62px;
+  background: url(../img/pics.png) no-repeat -16px -18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#top .topcon .search .webaddress {
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 74px;
+}
+#top .topcon .search .webaddress h1 {
+  line-height: 34px;
+}
+#top .topcon .search .webaddress h2 {
+  line-height: 28px;
+}
+#top .topcon .search .seabox {
+  height: 38px;
+  width: 314px;
+  background: #E9EFFD;
+  border-radius: 18px;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+}
+#top .topcon .search .seabox .inp {
+  height: 100%;
+  width: 234px;
+  border: none;
+  background: #E9EFFD;
+  margin-left: 24px;
+  outline: none;
+  font-size: 15px;
+}
+#top .topcon .search .seabox i {
+  display: block;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+#top .topcon .mian {
+  margin-top: 30px;
+}
+#top .topcon .mian .nav {
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+  background: #246AB0;
+}
+#top .topcon .mian .nav a {
+  display: block;
+  height: 100%;
+  width: 180px;
+  float: left;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+}
+#top .topcon .mian .nav a i {
+  margin-right: 12px;
+  font-size: 24px;
+}
+#top .topcon .mian .nav a:hover {
+  background: #234B7F;
+}
+#top .topcon .mian .nav a.asty:hover {
+  border-radius: 10px 0 0 0;
+}
+#top .topcon .mian .nav span {
+  display: block;
+  height: 18px;
+  width: 1px;
+  margin-top: 21px;
+  background: #fff;
+  float: left;
+}
+#top .topcon .mian .mconboxs {
+  height: 740px;
+  background: #fff;
+}
+#footer {
+  height: 186px;
+  padding: 1px 0;
+  background: #051929;
+}
+#footer .mediate {
+  height: 140px;
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+#footer .mediate .business {
+  width: 46px;
+  height: 55px;
+  background: url(../img/pics.png) no-repeat -106px -20px;
+}
+#footer .mediate .inform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  height: 105px;
+  width: 510px;
+}
+#footer .mediate .inform p {
+  line-height: 24px;
+  width: 255px;
+  color: #87898A;
+}
+#footer .mediate .website {
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .mediate .website .website_img {
+  height: 62px;
+  width: 62px;
+  background: url(../img/pics.png) no-repeat -12px -18px;
+}
+#footer .mediate .website p {
+  font-size: 18px;
+  color: #87898A;
+  line-height: 30px;
+}
+#footer .mediate .website p span {
+  font-size: 14px;
+}
+#footer .record {
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  color: #87898A;
+}
+.mconboxs .mod_title {
+  height: 53px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.mconboxs .mod_title .mod_tf {
+  display: block;
+  float: left;
+  height: 25px;
+  width: 0 5px;
+  line-height: 25px;
+  text-align: center;
+  color: #333333;
+  margin: 22px 0 0 5px;
+  cursor: pointer;
+}
+.mconboxs .mod_title .mod_tf.spsty {
+  margin-left: 20px;
+}
+.mconboxs .mod_title .mod_tf.asty {
+  color: #1D71B2;
+}
+.mconboxs .mod_con {
+  overflow: hidden;
+  padding: 20px 0;
+}
+.mconboxs .mod_con .mod_conssty {
+  height: 566px;
+}
+.mconboxs .mod_con .mod_conl {
+  width: 238px;
+  border: 1px solid #EBEBEB;
+  float: left;
+}
+.mconboxs .mod_con .mod_conl ul li {
+  height: 45px;
+  border-bottom: 1px solid #EBEBEB;
+  line-height: 45px;
+  text-align: center;
+  position: relative;
+}
+.mconboxs .mod_con .mod_conl ul li.listy {
+  background: #1D71B2;
+  color: #fff;
+}
+.mconboxs .mod_con .mod_conl ul li .triangle {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  height: 0px;
+  width: 0px;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #1D71B2;
+}
+.mconboxs .mod_con .mod_conr {
+  width: 920px;
+  height: 516px;
+  float: right;
+}
+.mconboxs .mod_con .mod_conr .mod_crt {
+  color: #1D71B2;
+  height: 35px;
+  font-weight: 700;
+  line-height: 35px;
+  border-bottom: 1px solid #EAEAEA;
+  position: relative;
+}
+.mconboxs .mod_con .mod_conr .mod_crt .bor {
+  display: block;
+  height: 2px;
+  width: 92px;
+  background: #234B7F;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+.mconboxs .mod_con .mod_conr ul {
+  margin: 20px 0 42px 0;
+}
+.mconboxs .mod_con .mod_conr ul li {
+  height: 44px;
+  line-height: 44px;
+  position: relative;
+  padding-left: 20px;
+  width: 900px;
+}
+.mconboxs .mod_con .mod_conr ul li .time {
+  float: right;
+  margin-right: 20px;
+  color: #B6B6B6;
+}
+.mconboxs .mod_con .mod_conr ul li:before {
+  content: "";
+  height: 7px;
+  width: 7px;
+  background: #F5D816;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  transform: rotate(45deg);
+}
+.mconboxs .mod_con .mod_conr .tabpage {
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mconboxs .mod_con .mod_conr .tabpage .tpagesty {
+  display: block;
+  height: 24px;
+  padding: 0 5px;
+  line-height: 24px;
+  margin-left: 5px;
+  color: #959595;
+}
+.mconboxs .mod_con .mod_conr .tabpage a {
+  border: 1px solid #EBEBEB;
+}
